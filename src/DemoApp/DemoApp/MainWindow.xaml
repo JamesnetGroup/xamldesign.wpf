@@ -1,77 +1,115 @@
-﻿<Window x:Class="DemoApp.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:james="https://jamesnet.dev/xaml/presentation"
-        xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        Background="#191919">
+﻿<Window
+    x:Class="DemoApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:james="https://jamesnet.dev/xaml/presentation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Background="#191919"
+    mc:Ignorable="d">
     <Grid>
-        <james:JamesStack Orientation="Horizontal" 
-                          ChildSpacing="10"
-                          VerticalAlignment="Center"
-                          Margin="10">
-            <james:JamesStack ChildSpacing="10" Margin="10">
-                <units:ToggleRadioSwitch/>
-                <units:ToggleRadioSwitch/>
-                <units:ToggleRadioSwitch/>
-                <units:ToggleRadioSwitch/>
-                <units:HorizSeparator/>
-                <units:ToggleSwitch/>
-                <units:ToggleSwitch/>
-                <units:ToggleSwitch/>
+        <james:JamesStack
+            Margin="10"
+            VerticalAlignment="Center"
+            ChildSpacing="10"
+            Orientation="Horizontal">
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <units:ToggleRadioSwitch />
+                <units:ToggleRadioSwitch />
+                <units:ToggleRadioSwitch />
+                <units:ToggleRadioSwitch />
+                <units:HorizSeparator />
+                <units:ToggleSwitch />
+                <units:ToggleSwitch />
+                <units:ToggleSwitch />
             </james:JamesStack>
 
-            <units:VerticalSeparator/>
+            <units:VerticalSeparator />
 
-            <james:JamesStack ChildSpacing="10" Margin="10">
-                <units:FilledButton Content="Complete"/>
-                <units:BorderedButton Content="Apply"/>
-                <units:HorizSeparator/>
-                <units:TextButton Content="Forget password?"/>
-                <units:IconButton Icon="Heart" Content="Heart"/>
-                <units:IconButton Icon="Heart" Content="Heart" Background="Transparent" MouseOverBackground="Transparent" PressedBackground="Transparent" BorderBrush="Transparent" Foreground="#FFFFFF"
-                                  MouseOverForeground="#CCCCCC" MouseOverBorderBrush="Transparent" CornerRadius="50" PressedBorderBrush="Transparent" PressedForeground="Transparent"/>
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <units:FilledButton Content="Complete" />
+                <units:BorderedButton Content="Apply" />
+                <units:HorizSeparator />
+                <units:TextButton Content="Forget password?" />
+                <units:IconButton Content="Heart" Icon="Heart" />
+                <units:IconButton
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Content="Heart"
+                    CornerRadius="50"
+                    Foreground="#FFFFFF"
+                    Icon="Heart"
+                    MouseOverBackground="Transparent"
+                    MouseOverBorderBrush="Transparent"
+                    MouseOverForeground="#CCCCCC"
+                    PressedBackground="Transparent"
+                    PressedBorderBrush="Transparent"
+                    PressedForeground="Transparent" />
 
-                
-                <units:HorizSeparator/>
-                <units:IconButton Icon="Apple" IsIconOnly="True" CornerRadius="50" HeaderBackground="#000000" HeaderBorderBrush="#000000" Background="Transparent"/>
-                <units:IconButton Icon="Google" IsIconOnly="True" CornerRadius="50" HeaderBackground="#000000" HeaderBorderBrush="#FFFFFF" Background="Transparent"/>
-                <units:IconButton Icon="Netflix" IsIconOnly="True" CornerRadius="50"/>
+
+                <units:HorizSeparator />
+                <units:IconButton
+                    Background="Transparent"
+                    CornerRadius="50"
+                    HeaderBackground="#000000"
+                    HeaderBorderBrush="#000000"
+                    Icon="Apple"
+                    IsIconOnly="True" />
+                <units:IconButton
+                    Background="Transparent"
+                    CornerRadius="50"
+                    HeaderBackground="#000000"
+                    HeaderBorderBrush="#FFFFFF"
+                    Icon="Google"
+                    IsIconOnly="True" />
+                <units:IconButton
+                    CornerRadius="50"
+                    Icon="Netflix"
+                    IsIconOnly="True" />
             </james:JamesStack>
-            
-            <units:VerticalSeparator/>
-            
-            <james:JamesStack ChildSpacing="10" Margin="10">
-                <units:SmartTextBox Placeholder="Email"/>
-                <units:SmartTextBox Placeholder="Name"/>
-                <units:IconCheckBox/>
-                <units:HorizSeparator/>
-                <units:RangeSlider/>
+
+            <units:VerticalSeparator />
+
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <units:SmartTextBox Placeholder="Email" />
+                <units:SmartTextBox Placeholder="Name" />
+                <units:SmartTextBox CornerRadius="15" Placeholder="Email" />
+                <units:SmartTextBox CornerRadius="15" Placeholder="Name" />
+                <units:IconCheckBox />
+                <units:HorizSeparator />
+                <units:RangeSlider />
                 <units:RadioExpander>
-                    <units:ToggleSwitch IsChecked="True"/>
+                    <units:ToggleSwitch IsChecked="True" />
                 </units:RadioExpander>
                 <units:RadioExpander>
-                    <units:FilledButton Content="Continue"/>
+                    <units:FilledButton Content="Continue" />
                 </units:RadioExpander>
                 <units:RadioExpander>
-                    <units:RangeSlider/>
+                    <units:RangeSlider />
                 </units:RadioExpander>
                 <units:RadioExpander>
-                    <units:SmartTextBox Placeholder="You must enter a value for this field."/>
+                    <units:SmartTextBox Placeholder="You must enter a value for this field." />
                 </units:RadioExpander>
             </james:JamesStack>
-            
-            <units:VerticalSeparator/>
-            
-            <james:JamesStack ChildSpacing="10" Margin="10">
-                <Border BorderThickness="2" BorderBrush="#EFB13A" Padding="10">
-                    <units:DateRangeSelector x:Name="date1"/>
+
+            <units:VerticalSeparator />
+
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <Border
+                    Padding="10"
+                    BorderBrush="#EFB13A"
+                    BorderThickness="2">
+                    <units:DateRangeSelector x:Name="date1" />
                 </Border>
             </james:JamesStack>
-            
+
+            <units:VerticalSeparator />
+
+            <units:SearchTextbox Width="100" Height="30" />
         </james:JamesStack>
     </Grid>
 </Window>
