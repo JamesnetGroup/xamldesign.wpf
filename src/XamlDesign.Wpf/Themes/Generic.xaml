@@ -1,0 +1,24 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RageSlider.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconButton.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ComboBoxToggleButton.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RadioExpander.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/CalendarComboBox.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/CalendarListItem.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/CalendarListBox.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RangeCalendar.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/DateRangeSelector.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ToggleRadioSwitch.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ToggleSwitch.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconCheckBox.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/SmartTextBox.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/VerticalSeparator.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/HorizSeparator.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/BorderedButton.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/FilledButton.xaml"/>
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/TextButton.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

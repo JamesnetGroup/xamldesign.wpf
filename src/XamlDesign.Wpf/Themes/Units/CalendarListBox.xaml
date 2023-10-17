@@ -1,0 +1,47 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:james="https://jamesnet.dev/xaml/presentation"
+    xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units">
+
+    <Style TargetType="{x:Type units:CalendarListBox}">
+        <Setter Property="Background" Value="#FF1B1E26"/>
+        <Setter Property="FontFamily" Value="{DynamicResource Basic.Font}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:CalendarListBox}">
+                    <Grid Grid.IsSharedSizeScope="True">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="S" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" HorizontalAlignment="Center" Foreground="#33D1D5DB"/>
+                        <TextBlock Text="M" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="1" HorizontalAlignment="Center" Foreground="#99D1D5DB"/>
+                        <TextBlock Text="T" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="2" HorizontalAlignment="Center" Foreground="#99D1D5DB"/>
+                        <TextBlock Text="W" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="3" HorizontalAlignment="Center" Foreground="#99D1D5DB"/>
+                        <TextBlock Text="T" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="4" HorizontalAlignment="Center" Foreground="#99D1D5DB"/>
+                        <TextBlock Text="F" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="5" HorizontalAlignment="Center" Foreground="#99D1D5DB"/>
+                        <TextBlock Text="S" FontSize="11.5" Grid.Row="0" FontWeight="SemiBold" Grid.Column="6" HorizontalAlignment="Center" Foreground="#33D1D5DB"/>
+                        <ItemsPresenter Grid.Row="1" Grid.ColumnSpan="7" Margin="0 12 0 0"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="7"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
