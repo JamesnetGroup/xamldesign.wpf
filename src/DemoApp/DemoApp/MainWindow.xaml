@@ -47,7 +47,8 @@
             <james:JamesStack ChildSpacing="10" Margin="10">
                 <units:SmartTextBox Placeholder="Email"/>
                 <units:SmartTextBox Placeholder="Name"/>
-                <units:IconCheckBox/>
+                <units:IconCheckBox IsChecked="False" Content="Aggre"/>
+                <units:IconCheckBox IsChecked="True" Content="Email"/>
                 <units:HorizSeparator/>
                 <units:RangeSlider/>
                 <units:RadioExpander>
