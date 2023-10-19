@@ -34,6 +34,22 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region FocusedForeground
+
+        public static readonly DependencyProperty FocusedForegroundProperty =
+            DependencyProperty.Register(
+                "FocusedForeground",
+                typeof(Brush),
+                typeof(SmartTextBox),
+                new FrameworkPropertyMetadata());
+
+        public Brush FocusedForeground
+        {
+            get => (Brush)GetValue(FocusedForegroundProperty);
+            set => SetValue(FocusedForegroundProperty, value);
+        }
+        #endregion
+
         #region FocusedBorderBrush
 
         public static readonly DependencyProperty FocusedBorderBrushProperty =
@@ -49,6 +65,23 @@ namespace XamlDesign.Wpf.UI.Units
             set => SetValue(FocusedBorderBrushProperty, value);
         }
         #endregion
+
+        #region FocusedBackground
+
+        public static readonly DependencyProperty FocusedBackgroundProperty =
+            DependencyProperty.Register(
+                "FocusedBackground",
+                typeof(Brush),
+                typeof(SmartTextBox),
+                new FrameworkPropertyMetadata());
+
+        public Brush FocusedBackground
+        {
+            get => (Brush)GetValue(FocusedBackgroundProperty);
+            set => SetValue(FocusedBackgroundProperty, value);
+        }
+        #endregion
+
 
         static SmartTextBox()
         {

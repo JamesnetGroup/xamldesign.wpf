@@ -1,0 +1,72 @@
+﻿<Window x:Class="DemoApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:james="https://jamesnet.dev/xaml/presentation"
+        xmlns:ctrls="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+        mc:Ignorable="d"
+        Background="#191919"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <james:JamesStack Orientation="Horizontal"
+                          VerticalAlignment="Center">
+            <james:JamesStack>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:HorizSeparator/>
+                <ctrls:ToggleSwitch/>
+                <ctrls:ToggleSwitch ButtonBackground="#5d4dcf" Background="#bcbaca" CheckedBackground="#bcbaca" MouseOverBackground="#bcbaca"/>
+                <ctrls:ToggleSwitch/>
+                <ctrls:HorizSeparator/>
+                <ctrls:IconSwitch IconType="Heart"/>
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+
+            <james:JamesStack>
+                <ctrls:FilledButton Content="Complete" />
+                <ctrls:BorderedButton Content="Apply" />
+                <ctrls:HorizSeparator />
+                <ctrls:TextButton Content="Forget password?" />
+                <ctrls:IconButton Content="Like" Icon="Heart"  />
+                <ctrls:IconButton Content="Youtube" Icon="Youtube" CornerRadius="13"/>
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+
+            <james:JamesStack>
+                <ctrls:SmartTextBox Placeholder="Name" />
+                <ctrls:SmartTextBox CornerRadius="15" Placeholder="Email" />
+                <ctrls:SmartTextBox CornerRadius="15" Placeholder="Name" FocusedBackground="#5d4dcf"/>
+                <ctrls:IconCheckBox />
+                <ctrls:HorizSeparator />
+                <ctrls:RangeSlider />
+                <ctrls:RadioExpander>
+                    <ctrls:ToggleSwitch IsChecked="True" />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:FilledButton Content="Continue" />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:RangeSlider />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:SmartTextBox Placeholder="You must enter a value for this field." />
+                </ctrls:RadioExpander>
+            </james:JamesStack>
+            
+            <ctrls:VerticalSeparator/>
+            
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <Border
+         Padding="10"
+         BorderBrush="#EFB13A"
+         BorderThickness="2">
+                    <ctrls:DateRangeSelector x:Name="date1" />
+                </Border>
+            </james:JamesStack>
+        </james:JamesStack>
+    </Grid>
+</Window>

@@ -13,7 +13,9 @@
         <Setter Property="Background" Value="#191919" />
         <Setter Property="BorderBrush" Value="#77EFB13A" />
         <Setter Property="FocusedBorderBrush" Value="#EFB13A" />
-        <Setter Property="Foreground" Value="#FFFFFF" />
+        <Setter Property="FocusedBackground" Value="#191919"/>
+        <Setter Property="FocusedForeground" Value="Red"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
         <Setter Property="PlaceholderForeground" Value="#55FFFFFF" />
         <Setter Property="Placeholder" Value="Input text...." />
         <Setter Property="BorderThickness" Value="0.59" />
@@ -28,7 +30,7 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
                         CornerRadius="{TemplateBinding CornerRadius}">
-                        <Grid>
+                        <Grid x:Name="grid">
                             <ScrollViewer x:Name="PART_ContentHost" Margin="{TemplateBinding Padding}" />
                             <TextBlock
                                 x:Name="placeholder"
@@ -42,7 +44,11 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsFocused" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FocusedBackground}"/>
                             <Setter TargetName="border" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FocusedBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="False">
+                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}"/>
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>

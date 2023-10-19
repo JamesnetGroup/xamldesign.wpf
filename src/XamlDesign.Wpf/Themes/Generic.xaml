@@ -10,6 +10,7 @@
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RangeCalendar.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/DateRangeSelector.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ToggleRadioSwitch.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconSwitch.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ToggleSwitch.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconCheckBox.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/SmartTextBox.xaml" />
