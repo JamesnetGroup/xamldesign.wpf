@@ -71,18 +71,6 @@
                     Icon="Netflix"
                     IsIconOnly="True" />
             </james:JamesStack>
-<<<<<<< HEAD
-            
-            <units:VerticalSeparator/>
-            
-            <james:JamesStack ChildSpacing="10" Margin="10">
-                <units:SmartTextBox Placeholder="Email"/>
-                <units:SmartTextBox Placeholder="Name"/>
-                <units:IconCheckBox IsChecked="False" Content="Aggre"/>
-                <units:IconCheckBox IsChecked="True" Content="Email"/>
-                <units:HorizSeparator/>
-                <units:RangeSlider/>
-=======
 
             <units:VerticalSeparator />
 
@@ -94,7 +82,6 @@
                 <units:IconCheckBox />
                 <units:HorizSeparator />
                 <units:RangeSlider />
->>>>>>> 89e1e2dddcd25ab30bc27e2341dd3cc8fea0afe5
                 <units:RadioExpander>
                     <units:ToggleSwitch IsChecked="True" />
                 </units:RadioExpander>
