@@ -17,7 +17,7 @@
                 <ctrls:ToggleRadioSwitch/>
                 <ctrls:HorizSeparator/>
                 <ctrls:ToggleSwitch/>
-                <ctrls:ToggleSwitch ButtonBackground="#5d4dcf" Background="#bcbaca" CheckedBackground="#bcbaca" MouseOverBackground="#bcbaca"/>
+                <ctrls:ToggleSwitch/>
                 <ctrls:ToggleSwitch/>
                 <ctrls:HorizSeparator/>
                 <ctrls:IconSwitch IconType="Heart"/>
