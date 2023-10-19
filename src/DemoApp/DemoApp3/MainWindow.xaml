@@ -1,0 +1,86 @@
+﻿<Window x:Class="DemoApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:james="https://jamesnet.dev/xaml/presentation"
+        xmlns:ctrls="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+        mc:Ignorable="d"
+        Background="#191919"
+        Title="MainWindow">
+    <Grid>
+        <james:JamesStack Orientation="Horizontal"
+                          VerticalAlignment="Center">
+            <james:JamesStack>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:ToggleRadioSwitch/>
+                <ctrls:HorizSeparator/>
+                <ctrls:ToggleSwitch/>
+                <ctrls:ToggleSwitch/>
+                <ctrls:ToggleSwitch/>
+                <ctrls:HorizSeparator/>
+                <!--<ctrls:IconSwitch IconType="Heart"/>-->
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+
+            <james:JamesStack>
+                <ctrls:FilledButton Content="Complete" />
+                <ctrls:BorderedButton Content="Apply" />
+                <ctrls:HorizSeparator />
+                <ctrls:TextButton Content="Forget password?" />
+                <ctrls:IconButton Content="Delete File" Icon="Delete"/>
+                <ctrls:IconButton Content="App Settings" Icon="CogRefreshOutline"/>
+                <ctrls:IconButton Content="Autentication" Icon="Security"/>
+                <ctrls:HorizSeparator />
+                <ctrls:IconButton Content="Google Login" Icon="Google" CornerRadius="4"
+                                  Background="#0e3f9f" MouseOverBackground="#103a8c" PressedBackground="#113376"/>
+                <ctrls:IconButton Content="Apple Login" Icon="Apple" CornerRadius="4" BorderThickness="1"
+                                  BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
+                                  Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
+                <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4"
+                                  Background="#307bba" MouseOverBackground="#2272b5" PressedBackground="#1361a3"/>
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+
+            <james:JamesStack>
+                <ctrls:SmartTextBox Placeholder="Name" />
+                <ctrls:SmartTextBox Placeholder="Email" />
+                <ctrls:SmartTextBox Placeholder="Name"/>
+                <ctrls:IconCheckBox IsChecked="False" Content="C++"/>
+                <ctrls:IconCheckBox IsChecked="True" Content="Phython"/>
+                <ctrls:IconCheckBox IsChecked="False" Content="Java"/>
+                <ctrls:IconCheckBox IsChecked="True" Content="C#"/>
+                <ctrls:IconCheckBox IsChecked="False" Content="Objective-C"/>
+                <ctrls:IconCheckBox IsChecked="True" Content="Javascript"/>
+                <ctrls:HorizSeparator />
+                <ctrls:RangeSlider LeftValue="20" RightValue="80" />
+                <!--<ctrls:RadioExpander>
+                    <ctrls:ToggleSwitch IsChecked="True" />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:FilledButton Content="Continue" />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:RangeSlider />
+                </ctrls:RadioExpander>
+                <ctrls:RadioExpander>
+                    <ctrls:SmartTextBox Placeholder="You must enter a value for this field." />
+                </ctrls:RadioExpander>-->
+            </james:JamesStack>
+            
+            <ctrls:VerticalSeparator/>
+            
+            <james:JamesStack Margin="10" ChildSpacing="10">
+                <Border
+         Padding="10"
+         BorderBrush="{DynamicResource SignitureColor}"
+         BorderThickness="2">
+                    <ctrls:DateRangeSelector x:Name="date1" />
+                </Border>
+            </james:JamesStack>
+        </james:JamesStack>
+    </Grid>
+</Window>
