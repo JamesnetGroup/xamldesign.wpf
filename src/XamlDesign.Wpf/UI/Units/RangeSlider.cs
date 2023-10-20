@@ -3,6 +3,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows;
 using System.Windows.Shapes;
 using System.Windows.Media;
+using System;
 
 namespace XamlDesign.Wpf.UI.Units
 {
