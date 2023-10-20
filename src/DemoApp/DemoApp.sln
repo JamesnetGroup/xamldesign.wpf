@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlDesign.Wpf", "..\XamlDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp3", "DemoApp3\DemoApp3.csproj", "{33E93A35-0998-4B55-B557-F7CCC21F2114}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkAppDemo", "FrameworkAppDemo\FrameworkAppDemo.csproj", "{9717F48E-ACAB-4EE9-B832-DFF8DC6289A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{33E93A35-0998-4B55-B557-F7CCC21F2114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33E93A35-0998-4B55-B557-F7CCC21F2114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33E93A35-0998-4B55-B557-F7CCC21F2114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9717F48E-ACAB-4EE9-B832-DFF8DC6289A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9717F48E-ACAB-4EE9-B832-DFF8DC6289A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9717F48E-ACAB-4EE9-B832-DFF8DC6289A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9717F48E-ACAB-4EE9-B832-DFF8DC6289A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
