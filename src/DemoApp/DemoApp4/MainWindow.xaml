@@ -1,4 +1,4 @@
-﻿<Window x:Class="DemoApp2.MainWindow"
+﻿<Window x:Class="DemoApp4.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,6 +9,7 @@
         Background="#191919"
         Title="MainWindow">
     <Grid>
+        
         <james:JamesStack Orientation="Horizontal"
                           VerticalAlignment="Center">
             <james:JamesStack>
@@ -34,13 +35,43 @@
                 <ctrls:IconButton Content="App Settings" Icon="CogRefreshOutline"/>
                 <ctrls:IconButton Content="Autentication" Icon="Security"/>
                 <ctrls:HorizSeparator />
-                <ctrls:IconButton Content="Google Login" Icon="Google" CornerRadius="4"
-                                  Background="#0e3f9f" MouseOverBackground="#103a8c" PressedBackground="#113376"/>
+                <ctrls:IconButton Content="Google Login" Icon="Google" CornerRadius="4" Foreground="#000000" IconBackground="#000000" 
+                                  Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
                 <ctrls:IconButton Content="Apple Login" Icon="Apple" CornerRadius="4" BorderThickness="1"
                                   BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
                                   Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
                 <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4"
-                                  Background="#307bba" MouseOverBackground="#2272b5" PressedBackground="#1361a3"/>
+                                  Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+
+            <james:JamesStack>
+                <ListBox>
+                    <ListBoxItem Tag="Overview"/>
+                    <ListBoxItem Tag="Account"/>
+                    <ListBoxItem Tag="Services"/>
+                    <ListBoxItem Tag="Payments"/>
+                </ListBox>
+
+                <ctrls:HorizSeparator />
+                
+                <ctrls:BadgeButton Icon="Facebook"/>
+                <ctrls:BadgeButton Icon="Google"/>
+                <ctrls:BadgeButton Icon="Microsoft"/>
+                <ctrls:BadgeButton Icon="Apple"/>
+                <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
+                <ctrls:HorizSeparator />
+
+                <ctrls:HorizSeparator />
+                
+                <ctrls:IconButton Content="Google Login" Icon="Delete" CornerRadius="50" Foreground="#000000" IconBackground="#000000" IsIconOnly="True"
+                                  Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
+                <ctrls:IconButton Content="Apple Login" Icon="Heart" CornerRadius="4" BorderThickness="1" IsIconOnly="True"
+                                  BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
+                                  Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
+                <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4" IsIconOnly="True"
+                                  Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
             </james:JamesStack>
 
             <ctrls:VerticalSeparator/>
@@ -70,9 +101,9 @@
                     <ctrls:SmartTextBox Placeholder="You must enter a value for this field." />
                 </ctrls:RadioExpander>-->
             </james:JamesStack>
-            
+
             <ctrls:VerticalSeparator/>
-            
+
             <james:JamesStack Margin="10" ChildSpacing="10">
                 <Border
          Padding="10"

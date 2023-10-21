@@ -1,112 +1,138 @@
 ﻿<Application x:Class="DemoApp2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:james="https://jamesnet.dev/xaml/presentation"
-            xmlns:ctrls="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+             xmlns:local="clr-namespace:DemoApp2"
+             xmlns:james="https://jamesnet.dev/xaml/presentation"
+             xmlns:ctrls="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="Background"  Color="#c7c2c2"/>
-        <SolidColorBrush x:Key="SIgnitureColor" Color="#26a5a2"/>
-        <SolidColorBrush x:Key="DisabledColor" Color="#069b97"/>
-        <SolidColorBrush x:Key="SIgnitureColorMouseOver" Color="#069b97"/>
-        <SolidColorBrush x:Key="SignitureColorForeground" Color="#FFFFFF"/>
+
+        <SolidColorBrush x:Key="SwitctBasehColor" Color="#10FFFFFF"/>
+        <SolidColorBrush x:Key="RangeBaseColor" Color="#88203731"/>
+        <SolidColorBrush x:Key="SignitureColor" Color="#9d359d"/>
+        <SolidColorBrush x:Key="MouseOverColor" Color="#842384"/>
+        <SolidColorBrush x:Key="PressedColor" Color="#6e206e"/>
+        <SolidColorBrush x:Key="SeparatorColor" Color="#0FFFFFFF"/>
+        <SolidColorBrush x:Key="TextBoxBoxBorderColor" Color="#411641"/>
+        <SolidColorBrush x:Key="BaseCheckBoxColor" Color="#4c1c4c"/>
+
+        <SolidColorBrush x:Key="FontColor" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="PlaceholderFontColor" Color="#77FFFFFF"/>
 
         <Style TargetType="{x:Type ctrls:HorizSeparator}">
-            <Setter Property="Background" Value="#cccccc"/>
+            <Setter Property="Background" Value="{DynamicResource SeparatorColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:VerticalSeparator}">
-            <Setter Property="Background" Value="#cccccc"/>
+            <Setter Property="Background" Value="{DynamicResource SeparatorColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:ToggleRadioSwitch}">
-            <Setter Property="Background" Value="#c7c2c2"/>
-            <Setter Property="CheckedBackground" Value="{DynamicResource SIgnitureColor}"/>
-            <Setter Property="MouseOverBackground" Value="#069b97"/>
+            <Setter Property="Background" Value="{DynamicResource SwitctBasehColor}"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="CheckedBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:ToggleSwitch}">
-            <Setter Property="Background" Value="{DynamicResource Background}"/>
-            <Setter Property="MouseOverBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="CheckedBackground" Value="{DynamicResource SIgnitureColor}"/>
-            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Background" Value="{DynamicResource SwitctBasehColor}"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="CheckedBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:FilledButton}">
-            <Setter Property="Background" Value="#26a5a2"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Background" Value="{DynamicResource SignitureColor}"/>
             <Setter Property="BorderBrush" Value="#191919"/>
             <Setter Property="Foreground" Value="#FFFFFF"/>
-            <Setter Property="MouseOverBackground" Value="#069b97"/>
-            <Setter Property="MouseOverBorderBrush" Value="{DynamicResource SIgnitureColor}"/>
-            <Setter Property="MouseOverForeground" Value="{DynamicResource SignitureColorForeground}"/>
-            <Setter Property="PressedBackground" Value="#058b88"/>
-            <Setter Property="PressedBorderBrush" Value="#191919"/>
-            <Setter Property="PressedForeground" Value="#FFFFFF"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverBorderBrush" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverForeground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="PressedBackground" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedBorderBrush" Value="Transparent"/>
+            <Setter Property="PressedForeground" Value="{DynamicResource FontColor}"/>
         </Style>
-            
+
         <Style TargetType="{x:Type ctrls:BorderedButton}">
+            <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="#FFFFFF"/>
-            <Setter Property="CornerRadius" Value="15"/>
-            <Setter Property="BorderBrush" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="Foreground" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="MouseOverBorderBrush" Value="#c4ceb3"/>
-            <Setter Property="MouseOverBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="MouseOverForeground" Value="#FFFFFF"/>
-            <Setter Property="PressedBorderBrush" Value="#191919"/>
-            <Setter Property="PressedBackground" Value="#058b88"/>
-            <Setter Property="PressedForeground" Value="#FFFFFF"/>
-
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="CornerRadius" Value="0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="MouseOverBorderBrush" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverForeground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="PressedBorderBrush" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedBackground" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedForeground" Value="{DynamicResource FontColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:TextButton}">
+            <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="#26a5a2"/>
-            <Setter Property="MouseOverForeground" Value="#FFFFFF"/>
-            <Setter Property="PressedForeground" Value="#FFFFFF"/>
+            <Setter Property="Foreground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="MouseOverForeground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="PressedForeground" Value="{DynamicResource PressedColor}"/>
         </Style>
 
 
         <Style TargetType="{x:Type ctrls:IconButton}">
-            <Setter Property="Background" Value="#26a5a2"/>
-            <Setter Property="BorderBrush" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="MouseOverBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="MouseOverForeground" Value="#FFFFFF"/>
-            <Setter Property="MouseOverBorderBrush" Value="#938EBD"/>
-            <Setter Property="PressedBorderBrush" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="PressedBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="PressedForeground" Value="#FFFFFF"/>
-            <Setter Property="HeaderBackground" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="HeaderBorderBrush" Value="{DynamicResource DisabledColor}"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HeaderBorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="Background" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="HeaderBackground" Value="Transparent"/>
+            <Setter Property="HeaderBorderBrush" Value="Transparent"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverBorderBrush" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverForeground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="PressedBorderBrush" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedBackground" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedForeground" Value="{DynamicResource FontColor}"/>
             <Setter Property="HeaderMouseOverBorderBrush" Value="Transparent"/>
-            <Setter Property="HeaderMouseOverBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="HeaderPressedBackground" Value="{DynamicResource SIgnitureColorMouseOver}"/>
-            <Setter Property="HeaderPressedBorderBrush" Value="{DynamicResource SIgnitureColorMouseOver}"/>
+            <Setter Property="HeaderMouseOverBackground" Value="Transparent"/>
+            <Setter Property="HeaderPressedBackground" Value="Transparent"/>
+            <Setter Property="HeaderPressedBorderBrush" Value="Transparent"/>
         </Style>
 
         <Style TargetType="{x:Type ctrls:SmartTextBox}">
-            <Setter Property="Background" Value="#191919"/>
-            <Setter Property="BorderBrush" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="FocusedBorderBrush" Value="{DynamicResource DisabledColor}"/>
-            <Setter Property="FocusedBackground" Value="#191919"/>
-            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Background" Value="#151515"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource TextBoxBoxBorderColor}"/>
+            <Setter Property="FocusedBorderBrush" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="PlaceholderForeground" Value="{DynamicResource PlaceholderFontColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="FocusedBackground" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
         </Style>
 
         <Style TargetType="{x:Type ctrls:RangeSlider}">
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="TrackRangeBackground" Value="{DynamicResource SIgnitureColor}"/>
+            <Setter Property="TrackBackground" Value="{DynamicResource RangeBaseColor}"/>
+            <Setter Property="TrackRangeBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
+        <Style TargetType="{x:Type ctrls:IconCheckBox}">
+            <Setter Property="IconBackground" Value="{DynamicResource BaseCheckBoxColor}"/>
+            <Setter Property="IconCheckedBackground" Value="{DynamicResource SignitureColor}"/>
+        </Style>
+
         <Style TargetType="{x:Type ctrls:RadioExpander}">
             <Setter Property="Background" Value="#191919"/>
             <Setter Property="Foreground" Value=" #FFFFFF"/>
         </Style>
 
         <Style TargetType="{x:Type ctrls:DateRangeSelector}">
-            <Setter Property="BorderBrush" Value="{DynamicResource SIgnitureColor}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SignitureColor}"/>
         </Style>
 
         <Style TargetType="{x:Type ctrls:CalendarListItem}">
         </Style>
     </Application.Resources>
 </Application>
+

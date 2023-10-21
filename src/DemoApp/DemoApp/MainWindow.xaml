@@ -35,6 +35,13 @@
                 <units:BorderedButton Content="Apply" />
                 <units:HorizSeparator />
                 <units:TextButton Content="Forget password?" />
+                <units:HorizSeparator />
+                <units:BadgeButton Icon="Facebook"/>
+                <units:BadgeButton Icon="Google"/>
+                <units:BadgeButton Icon="Microsoft"/>
+                <units:BadgeButton Icon="Apple"/>
+                <units:BadgeButton Icon="MicrosoftVisualStudio"/>
+                <units:HorizSeparator />
                 <units:IconButton Content="Heart" Icon="Heart" />
                 <units:IconButton
                     Background="Transparent"

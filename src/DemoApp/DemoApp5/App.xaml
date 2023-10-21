@@ -1,4 +1,4 @@
-﻿<Application x:Class="DemoApp3.App"
+﻿<Application x:Class="DemoApp5.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             xmlns:james="https://jamesnet.dev/xaml/presentation"
@@ -8,36 +8,36 @@
 
         <SolidColorBrush x:Key="SwitctBasehColor" Color="#10FFFFFF"/>
         <SolidColorBrush x:Key="RangeBaseColor" Color="#88203731"/>
-        <SolidColorBrush x:Key="SignitureColor" Color="#036f54"/>
-        <SolidColorBrush x:Key="MouseOverColor" Color="#005943"/>
-        <SolidColorBrush x:Key="PressedColor" Color="#064d3b"/>
+        <SolidColorBrush x:Key="SignitureColor" Color="#0c9ca5"/>
+        <SolidColorBrush x:Key="MouseOverColor" Color="#0a828a"/>
+        <SolidColorBrush x:Key="PressedColor" Color="#0a777e"/>
         <SolidColorBrush x:Key="SeparatorColor" Color="#0FFFFFFF"/>
-        <SolidColorBrush x:Key="TextBoxBoxBorderColor" Color="#0b382d"/>
-        <SolidColorBrush x:Key="BaseCheckBoxColor" Color="#0b382d"/>
-        
+        <SolidColorBrush x:Key="TextBoxBoxBorderColor" Color="#0b666c"/>
+        <SolidColorBrush x:Key="BaseCheckBoxColor" Color="#0a585d"/>
+
         <SolidColorBrush x:Key="FontColor" Color="#FFFFFF"/>
         <SolidColorBrush x:Key="PlaceholderFontColor" Color="#77FFFFFF"/>
 
         <Style TargetType="{x:Type ctrls:HorizSeparator}">
             <Setter Property="Background" Value="{DynamicResource SeparatorColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:VerticalSeparator}">
             <Setter Property="Background" Value="{DynamicResource SeparatorColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:ToggleRadioSwitch}">
             <Setter Property="Background" Value="{DynamicResource SwitctBasehColor}"/>
             <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
             <Setter Property="CheckedBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:ToggleSwitch}">
             <Setter Property="Background" Value="{DynamicResource SwitctBasehColor}"/>
             <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
             <Setter Property="CheckedBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:FilledButton}">
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Background" Value="{DynamicResource SignitureColor}"/>
@@ -73,6 +73,16 @@
             <Setter Property="Foreground" Value="{DynamicResource FontColor}"/>
             <Setter Property="MouseOverForeground" Value="{DynamicResource MouseOverColor}"/>
             <Setter Property="PressedForeground" Value="{DynamicResource PressedColor}"/>
+        </Style>
+
+        <Style TargetType="{x:Type ctrls:BadgeButton}">
+            <Setter Property="Background" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="IconBackground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="PressedBackground" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="IconMouseOverBackground" Value="{DynamicResource FontColor}"/>
+            <Setter Property="IconPressedBackground" Value="{DynamicResource FontColor}"/>
         </Style>
 
 
@@ -120,7 +130,7 @@
             <Setter Property="IconBackground" Value="{DynamicResource BaseCheckBoxColor}"/>
             <Setter Property="IconCheckedBackground" Value="{DynamicResource SignitureColor}"/>
         </Style>
-        
+
         <Style TargetType="{x:Type ctrls:RadioExpander}">
             <Setter Property="Background" Value="#191919"/>
             <Setter Property="Foreground" Value=" #FFFFFF"/>
@@ -132,5 +142,52 @@
 
         <Style TargetType="{x:Type ctrls:CalendarListItem}">
         </Style>
+
+
+        <Style TargetType="{x:Type ListBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <ItemsPresenter/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="4"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="Background" Value="#191919"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <Border Background="{TemplateBinding Background}">
+                            <james:JamesGrid Rows="Auto, Auto" Columns="*">
+                                <TextBlock Text="{TemplateBinding Tag}" Padding="10" HorizontalAlignment="Center"/>
+                                <Border x:Name="line"
+                                 Height="3" Background="Transparent"/>
+                            </james:JamesGrid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#252525"/>
+                                <Setter TargetName="line" Property="Background" Value="{DynamicResource PressedColor}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#252525"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                    
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Application.Resources>
 </Application>

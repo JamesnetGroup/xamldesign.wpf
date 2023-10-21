@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.75" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\XamlDesign.Wpf\XamlDesign.Wpf.csproj" />
   </ItemGroup>
 
