@@ -1,16 +1,16 @@
-# xamldesignwpf
+# XamlDesign.Wpf
 
-![image](https://github.com/jamesnet214/xamldesignwpf/assets/54387261/d03074ca-4fd3-4566-9e09-dc4888758af3)
+![Library Logo](https://github.com/jamesnet214/xamldesignwpf/assets/54387261/d03074ca-4fd3-4566-9e09-dc4888758af3)
 
-**xamldesignwpf**는 WPF 애플리케이션을 위한 최적화된 오픈 소스 라이브러리입니다. 이 라이브러리는 누겟 패키지로도 제공되며, 다양한 컨트롤과 유틸리티를 통해 개발의 편리성을 높여줍니다.
+**XamlDesign.Wpf.UI.Units**는 WPF 애플리케이션을 위한 고성능의 오픈소스 UI 라이브러리입니다. 누겟 패키지로 제공되며, 다양한 컨트롤과 유틸리티를 포함하여 WPF 개발의 편리성과 효율성을 극대화해 줍니다.
 
-## 주요 특징
+## 🌟 주요 특징
 
-- **다양한 .NET 지원**: .NET Framework부터 .NET Core까지, 모든 닷넷 버전에서 호환성 있게 설계되었습니다.
-- **유연한 커스터마이징**: 각 컨트롤은 풍부한 DependencyProperty를 포함하며, 별도의 템플릿 커스터마이징 없이도 유연하게 디자인 변경이 가능합니다.
-- **참조 라이브러리**: 이 라이브러리는 `Jamesnet.Wpf`, `CommunityToolkit.Mvvm`, 그리고 `Prism` 등의 라이브러리를 기반으로 합니다.
+- 🚀 **다양한 .NET 지원**: .NET Framework부터 .NET Core까지 모든 주요 버전에서 호환.
+- 🎨 **유연한 커스터마이징**: 풍부한 DependencyProperty로 쉽게 UI를 커스터마이징.
+- 🔗 **참조 라이브러리**: `Jamesnet.Wpf`, `CommunityToolkit.Mvvm`, 그리고 `Prism` 기반.
 
-## Control List
+## 📜 Control List
 
 | Control               | Base Type       | Description                                 | Namespace              | Template Link |
 |:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
@@ -35,7 +35,32 @@
 | ToggleSwitch          | ToggleSwitch    | 기본 토글 스위치 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleSwitch) |
 | VerticalSeparator     | Separator       | 수직 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/VerticalSeparator) |
 
+---
+
+## 💡 시작하기
+
+- **설치**:
+  ```sh
+  Install-Package XamlDesign.Wpf.UI.Units -Version [최신 버전 번호]
+  ```
+
+- [📖 Documentation (위키로 연결)](https://github.com/jamesnet214/xamldesignwpf/wiki)
+- [🐞 이슈 제출하기](https://github.com/jamesnet214/xamldesignwpf/issues)
 
 ---
 
-이 Readme를 통해 개발자들이 라이브러리의 주요 특징과 제공하는 컨트롤들에 대해 쉽게 이해하고 활용할 수 있을 것입니다.
+## 🤝 기여하기
+
+모든 종류의 기여를 환영합니다! 이슈 제출, 풀 리퀘스트, 개선 제안 등 자유롭게 참여해주세요.
+
+- [기여 가이드라인 보기](LINK_TO_CONTRIBUTING_GUIDE)
+
+---
+
+## ⚖ 라이선스
+
+이 프로젝트는 MIT 라이선스 하에 배포됩니다. [라이선스 내용 확인하기](LICENSE).
+
+---
+
+이렇게 README에 기본 정보 외에도 설치 방법, 문서 링크, 이슈 제출 방법, 기여 방법, 라이선스 정보 등을 추가하여 개발자들에게 프로젝트에 대한 전반적인 정보와 참여 방법을 제공할 수 있습니다.
