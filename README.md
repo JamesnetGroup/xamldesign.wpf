@@ -12,28 +12,46 @@
 
 ## 📜 Control List
 
+### Buttons
 | Control               | Base Type       | Description                                 | Namespace              | Template Link |
 |:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
 | BorderedButton        | Button          | 버튼에 테두리 스타일이 추가된 컨트롤        | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BorderedButton) |
 | FilledButton          | Button          | 편평한 디자인의 버튼 컨트롤                 | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/FilledButton) |
+| IconButton            | Button          | 아이콘 포함된 버튼 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconButton) |
+| TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
+
+### Calendar & Date Related
+| Control               | Base Type       | Description                                 | Namespace              | Template Link |
+|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
 | CalendarComboBox      | ComboBox        | 달력 선택 기능이 추가된 콤보 박스           | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarComboBox) |
 | CalendarListBox       | ListBox         | 달력 형태로 아이템을 표시하는 리스트 박스   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarListBox) |
 | CalendarListItem      | ListBoxItem     | 달력 리스트 박스의 개별 아이템             | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarListItem) |
-| ComboBoxToggleButton  | ToggleButton    | 콤보 박스와 토글 버튼이 결합된 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ComboBoxToggleButton) |
 | DateRangeSelector     | Control         | 날짜 범위를 선택하는 컨트롤                 | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/DateRangeSelector) |
-| HorizSeparator        | Separator       | 수평 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/HorizSeparator) |
-| IconButton            | Button          | 아이콘 포함된 버튼 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconButton) |
-| IconCheckBox          | CheckBox        | 아이콘 포함된 체크 박스 컨트롤              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconCheckBox) |
+| RangeCalendar         | Calendar        | 범위 선택이 가능한 달력 컨트롤              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RangeCalendar) |
+
+### Text Input & Related
+| Control               | Base Type       | Description                                 | Namespace              | Template Link |
+|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
+| SearchTextBox         | TextBox         | 검색 아이콘 포함된 텍스트 박스 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SearchTextBox) |
+| SmartTextBox          | TextBox         | 입력에 따라 제안하는 스마트 텍스트 박스     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SmartTextBox) |
+
+### Toggles & Selectors
+| Control               | Base Type       | Description                                 | Namespace              | Template Link |
+|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
+| ComboBoxToggleButton  | ToggleButton    | 콤보 박스와 토글 버튼이 결합된 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ComboBoxToggleButton) |
 | IconSwitch            | ToggleSwitch    | 아이콘 포함된 토글 스위치 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconSwitch) |
 | RadioExpander         | Expander        | 라디오 버튼 기능이 포함된 확장 컨트롤      | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RadioExpander) |
 | RageSlider            | Slider          | 주 rage 값을 표시하는 슬라이더             | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RageSlider) |
-| RangeCalendar         | Calendar        | 범위 선택이 가능한 달력 컨트롤              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RangeCalendar) |
-| SearchTextBox         | TextBox         | 검색 아이콘 포함된 텍스트 박스 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SearchTextBox) |
-| SmartTextBox          | TextBox         | 입력에 따라 제안하는 스마트 텍스트 박스     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SmartTextBox) |
-| TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
 | ToggleRadioSwitch     | ToggleSwitch    | 라디오 버튼 스위치 형태의 토글 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleRadioSwitch) |
 | ToggleSwitch          | ToggleSwitch    | 기본 토글 스위치 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleSwitch) |
+
+### Separators
+| Control               | Base Type       | Description                                 | Namespace              | Template Link |
+|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
+| HorizSeparator        | Separator       | 수평 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/HorizSeparator) |
 | VerticalSeparator     | Separator       | 수직 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/VerticalSeparator) |
+
+
 
 ---
 
