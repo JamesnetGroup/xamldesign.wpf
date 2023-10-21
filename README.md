@@ -31,9 +31,7 @@
 | SearchTextBox         | TextBox         | 검색 아이콘 포함된 텍스트 박스 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SearchTextBox) |
 | SmartTextBox          | TextBox         | 입력에 따라 제안하는 스마트 텍스트 박스     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SmartTextBox) |
 | TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
-| ToggleRadioSwitch     | ToggleSwitch    | 라디오 버튼 스위치 형태의 토글 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/x
-
-amldesignwpf/wiki/ToggleRadioSwitch) |
+| ToggleRadioSwitch     | ToggleSwitch    | 라디오 버튼 스위치 형태의 토글 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleRadioSwitch) |
 | ToggleSwitch          | ToggleSwitch    | 기본 토글 스위치 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleSwitch) |
 | VerticalSeparator     | Separator       | 수직 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/VerticalSeparator) |
 
