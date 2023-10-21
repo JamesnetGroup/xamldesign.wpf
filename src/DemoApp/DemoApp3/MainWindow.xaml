@@ -50,7 +50,7 @@
                 <ctrls:SmartTextBox Placeholder="Email" />
                 <ctrls:SmartTextBox Placeholder="Name"/>
                 <ctrls:IconCheckBox IsChecked="False" Content="C++"/>
-                <ctrls:IconCheckBox IsChecked="True" Content="Phython"/>
+                <ctrls:IconCheckBox IsChecked="True" Content="Python"/>
                 <ctrls:IconCheckBox IsChecked="False" Content="Java"/>
                 <ctrls:IconCheckBox IsChecked="True" Content="C#"/>
                 <ctrls:IconCheckBox IsChecked="False" Content="Objective-C"/>
