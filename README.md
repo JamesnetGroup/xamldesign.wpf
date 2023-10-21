@@ -1,7 +1,3 @@
-네, 주어진 정보를 바탕으로 Readme를 업데이트하였습니다.
-
----
-
 # xamldesignwpf
 
 ![image](https://github.com/jamesnet214/xamldesignwpf/assets/54387261/d03074ca-4fd3-4566-9e09-dc4888758af3)
