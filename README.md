@@ -15,10 +15,11 @@
 ### Buttons
 | Control               | Base Type       | Description                                 | Namespace              | Template Link |
 |:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| BorderedButton        | Button          | 버튼에 테두리 스타일이 추가된 컨트롤        | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BorderedButton) |
-| FilledButton          | Button          | 편평한 디자인의 버튼 컨트롤                 | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/FilledButton) |
-| IconButton            | Button          | 아이콘 포함된 버튼 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconButton) |
-| TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
+| BorderedButton        | Button          | 버튼에 테두리 스타일이 추가된 컨트롤           | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BorderedButton) |
+| FilledButton          | Button          | 편평한 디자인의 버튼 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/FilledButton) |
+| IconButton            | Button          | 아이콘 포함된 버튼 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconButton) |
+| TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤               | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
+| BadgeButton           | Button          | 아이콘만으로 구성된 버튼 컨트롤               | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BadgeButton) |
 
 ### Calendar & Date Related
 | Control               | Base Type       | Description                                 | Namespace              | Template Link |
