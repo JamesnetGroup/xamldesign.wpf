@@ -5,6 +5,7 @@
     xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units">
 
     <Style TargetType="{x:Type units:UnderlineMenuBox}">
+        <Setter Property="UnderlineBrush" Value="#EFEF9A15"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:UnderlineMenuBox}">
