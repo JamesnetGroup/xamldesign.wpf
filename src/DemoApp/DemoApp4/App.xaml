@@ -9,8 +9,8 @@
         <SolidColorBrush x:Key="SwitctBasehColor" Color="#10FFFFFF"/>
         <SolidColorBrush x:Key="RangeBaseColor" Color="#88203731"/>
         <SolidColorBrush x:Key="SignitureColor" Color="#ea5247"/>
-        <SolidColorBrush x:Key="MouseOverColor" Color="#d3493f"/>
-        <SolidColorBrush x:Key="PressedColor" Color="#c9463d"/>
+        <SolidColorBrush x:Key="MouseOverColor" Color="#d44c43"/>
+        <SolidColorBrush x:Key="PressedColor" Color="#ba433a"/>
         <SolidColorBrush x:Key="SeparatorColor" Color="#0FFFFFFF"/>
         <SolidColorBrush x:Key="TextBoxBoxBorderColor" Color="#7f2a24"/>
         <SolidColorBrush x:Key="BaseCheckBoxColor" Color="#842d27"/>
@@ -133,7 +133,19 @@
         <Style TargetType="{x:Type ctrls:CalendarListItem}">
         </Style>
 
+        <Style TargetType="{x:Type ctrls:BadgeButton}">
+            <Setter Property="Background" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="MouseOverBackground" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="MouseOverBorderBrush" Value="{DynamicResource MouseOverColor}"/>
+            <Setter Property="PressedBackground" Value="{DynamicResource PressedColor}"/>
+            <Setter Property="PressedBorderBrush" Value="{DynamicResource PressedColor}"/>
 
+        </Style>
+
+        <Style TargetType="{x:Type ctrls:UnderlineMenuBox}" >
+            <Setter Property="UnderlineBrush" Value="{DynamicResource SignitureColor}"/>
+        </Style>
 
         <Style TargetType="{x:Type ListBox}">
             <Setter Property="Template">

@@ -4,6 +4,15 @@
     xmlns:james="https://jamesnet.dev/xaml/presentation"
     xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units">
 
+
+    <ItemsPanelTemplate x:Key="HorizontalStyle">
+        <UniformGrid Columns="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=Items.Count}"/>
+    </ItemsPanelTemplate>
+
+    <ItemsPanelTemplate x:Key="VerticalStyle">
+        <StackPanel/>
+    </ItemsPanelTemplate>
+
     <Style TargetType="{x:Type units:UnderlineMenuBox}">
         <Setter Property="UnderlineBrush" Value="#EFEF9A15"/>
         <Setter Property="Template">
@@ -13,12 +22,11 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="ItemsPanel">
-            <Setter.Value>
-                <ItemsPanelTemplate>
-                    <UniformGrid Columns="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=Items.Count}"/>
-                </ItemsPanelTemplate>
-            </Setter.Value>
-        </Setter>
+        <Setter Property="ItemsPanel" Value="{StaticResource HorizontalStyle}"/>
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="ItemsPanel" Value="{StaticResource VerticalStyle}"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>

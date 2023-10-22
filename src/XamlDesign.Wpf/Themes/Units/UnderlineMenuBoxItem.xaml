@@ -5,7 +5,7 @@
     xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units">
 
     <Style TargetType="{x:Type units:UnderlineMenuBoxItem}">
-        <Setter Property="Foreground" Value="#FFFFFF" />
+        <Setter Property="Foreground" Value="#FFFFFF"/>
         <Setter Property="Background" Value="#191919"/>
         <Setter Property="Template">
             <Setter.Value>

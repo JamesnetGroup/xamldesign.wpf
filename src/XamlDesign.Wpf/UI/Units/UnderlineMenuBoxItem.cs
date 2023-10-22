@@ -34,6 +34,7 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+
         static UnderlineMenuBoxItem()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(UnderlineMenuBoxItem), new FrameworkPropertyMetadata(typeof(UnderlineMenuBoxItem)));

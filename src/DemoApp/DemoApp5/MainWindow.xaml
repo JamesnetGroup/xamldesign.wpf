@@ -12,24 +12,32 @@
         <james:JamesStack Orientation="Horizontal"
                           VerticalAlignment="Center">
             <james:JamesStack>
+                <TextBlock Text="ToggleRadioSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:ToggleRadioSwitch/>
                 <ctrls:ToggleRadioSwitch/>
                 <ctrls:ToggleRadioSwitch/>
                 <ctrls:HorizSeparator/>
+                <TextBlock Text="ToggleSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:ToggleSwitch/>
                 <ctrls:ToggleSwitch/>
                 <ctrls:ToggleSwitch/>
-                <ctrls:HorizSeparator/>
                 <!--<ctrls:IconSwitch IconType="Heart"/>-->
             </james:JamesStack>
 
             <ctrls:VerticalSeparator/>
 
             <james:JamesStack>
+
+                <TextBlock Text="FilledButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:FilledButton Content="Complete" />
+                <ctrls:HorizSeparator/>
+                <TextBlock Text="BorderedButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:BorderedButton Content="Apply" />
                 <ctrls:HorizSeparator />
+                <TextBlock Text="TextButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:TextButton Content="Forget password?" />
+                <ctrls:HorizSeparator/>
+                <TextBlock Text="IconButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:IconButton Content="Delete File" Icon="Delete"/>
                 <ctrls:IconButton Content="App Settings" Icon="CogRefreshOutline"/>
                 <ctrls:IconButton Content="Autentication" Icon="Security"/>
@@ -45,28 +53,46 @@
 
             <ctrls:VerticalSeparator/>
 
-            <james:JamesStack>
-                <ctrls:UnderlineMenuBox>
+            <james:JamesStack Orientation="Vertical">
+                <TextBlock Text="UnderlineMenuBoxItem" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                <ctrls:UnderlineMenuBox >
                     <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
                     <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
                     <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
                     <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
                 </ctrls:UnderlineMenuBox>
+
                 <ctrls:HorizSeparator />
 
+                <ctrls:UnderlineMenuBox Orientation="Vertical" Width="120" HorizontalAlignment="Left">
+                    <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
+                </ctrls:UnderlineMenuBox>
+            </james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+            
+            <james:JamesStack  >
+                <TextBlock Text="BadgeButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" />
                 <ctrls:BadgeButton Icon="Facebook"/>
                 <ctrls:BadgeButton Icon="Google"/>
                 <ctrls:BadgeButton Icon="Microsoft"/>
                 <ctrls:BadgeButton Icon="Apple"/>
                 <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
-                <ctrls:HorizSeparator />
             </james:JamesStack>
-            <ctrls:HorizSeparator />
             
+            <ctrls:VerticalSeparator/>
+           
             <james:JamesStack>
+
+                <TextBlock Text="SmartTextBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:SmartTextBox Placeholder="Name" />
                 <ctrls:SmartTextBox Placeholder="Email" />
                 <ctrls:SmartTextBox Placeholder="Name"/>
+                <ctrls:HorizSeparator />
+                <TextBlock Text="IconCheckBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:IconCheckBox IsChecked="False" Content="C++"/>
                 <ctrls:IconCheckBox IsChecked="True" Content="Phython"/>
                 <ctrls:IconCheckBox IsChecked="False" Content="Java"/>
@@ -74,6 +100,7 @@
                 <ctrls:IconCheckBox IsChecked="False" Content="Objective-C"/>
                 <ctrls:IconCheckBox IsChecked="True" Content="Javascript"/>
                 <ctrls:HorizSeparator />
+                <TextBlock Text="RangeSlider" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <ctrls:RangeSlider LeftValue="20" RightValue="80" />
                 <!--<ctrls:RadioExpander>
                     <ctrls:ToggleSwitch IsChecked="True" />
@@ -92,6 +119,7 @@
             <ctrls:VerticalSeparator/>
 
             <james:JamesStack Margin="10" ChildSpacing="10">
+                <TextBlock Text="DateRangeSelector" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
                 <Border
          Padding="10"
          BorderBrush="{DynamicResource SignitureColor}"

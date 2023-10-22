@@ -33,6 +33,22 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region Orientation
+
+        public static readonly DependencyProperty OrientationProperty =
+            DependencyProperty.Register(
+                "Orientation",
+                typeof(Orientation),
+                typeof(UnderlineMenuBox),
+                new FrameworkPropertyMetadata());
+
+        public Orientation Orientation
+        {
+            get => (Orientation)GetValue(OrientationProperty);
+            set => SetValue(OrientationProperty, value);
+        }
+        #endregion
+
         static UnderlineMenuBox()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(UnderlineMenuBox), new FrameworkPropertyMetadata(typeof(UnderlineMenuBox)));
