@@ -49,9 +49,42 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region SelectedMenuItem
+
+        public static readonly DependencyProperty SelectedMenuItemProperty =
+            DependencyProperty.Register(
+                "SelectedMenuItem",
+                typeof(string),
+                typeof(UnderlineMenuBox),
+                new FrameworkPropertyMetadata(null));
+
+        public string SelectedMenuItem
+        {
+            get => (string)GetValue(SelectedMenuItemProperty);
+            set => SetValue(SelectedMenuItemProperty, value);
+        }
+        #endregion
+
         static UnderlineMenuBox()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(UnderlineMenuBox), new FrameworkPropertyMetadata(typeof(UnderlineMenuBox)));
+        }
+
+        public UnderlineMenuBox()
+        {
+            this.SelectionChanged += UnderlineMenuBox_SelectionChanged;
+        }
+
+        private void UnderlineMenuBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.SelectedItem is UnderlineMenuBoxItem item)
+            {
+                SelectedMenuItem = item.Content as string;
+            }
+            else
+            {
+                SelectedMenuItem = null;
+            }
         }
 
         protected override DependencyObject GetContainerForItemOverride()

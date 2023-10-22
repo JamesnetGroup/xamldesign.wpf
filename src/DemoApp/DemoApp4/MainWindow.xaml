@@ -5,115 +5,122 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:james="https://jamesnet.dev/xaml/presentation"
         xmlns:ctrls="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+        xmlns:cnvts="clr-namespace:XamlDesign.Wpf.Local.Converters;assembly=XamlDesign.Wpf"
         mc:Ignorable="d"
         Background="#191919"
         Title="MainWindow">
-    <Grid>
-        
-        <james:JamesStack Orientation="Horizontal"
+    <james:JamesGrid Rows="Auto, *" Columns="*">
+        <ctrls:UnderlineMenuBox x:Name="menu" HorizontalAlignment="Left">
+            <ctrls:UnderlineMenuBoxItem Content="Buttons" Icon="Apple" IsSelected="True"/>
+            <ctrls:UnderlineMenuBoxItem Content="Icons" Icon="Microsoft"/>
+            <ctrls:UnderlineMenuBoxItem Content="Controls" Icon="Instagram"/>
+        </ctrls:UnderlineMenuBox>
+        <Grid>
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Buttons}">
+                <james:JamesStack Orientation="Horizontal"
                           VerticalAlignment="Center">
-            <james:JamesStack>
+                    <james:JamesStack>
 
-                <TextBlock Text="ToggleRadioSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:ToggleRadioSwitch/>
-                <ctrls:ToggleRadioSwitch/>
-                <ctrls:ToggleRadioSwitch/>
-                <ctrls:HorizSeparator/>
-                <TextBlock Text="ToggleSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:ToggleSwitch/>
-                <ctrls:ToggleSwitch/>
-                <ctrls:ToggleSwitch/>
-                <ctrls:HorizSeparator/>
-                <!--<ctrls:IconSwitch IconType="Heart"/>-->
-            </james:JamesStack>
+                        <TextBlock Text="ToggleRadioSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:ToggleRadioSwitch/>
+                        <ctrls:ToggleRadioSwitch/>
+                        <ctrls:ToggleRadioSwitch/>
+                        <ctrls:HorizSeparator/>
+                        <TextBlock Text="ToggleSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:ToggleSwitch/>
+                        <ctrls:ToggleSwitch/>
+                        <ctrls:ToggleSwitch/>
+                        <ctrls:HorizSeparator/>
+                        <!--<ctrls:IconSwitch IconType="Heart"/>-->
+                    </james:JamesStack>
 
-            <ctrls:VerticalSeparator/>
+                    <ctrls:VerticalSeparator/>
 
-            <james:JamesStack>
-                <TextBlock Text="FilledButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:FilledButton Content="Complete" />
-                <TextBlock Text="BorderedButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:BorderedButton Content="Apply" />
-                <ctrls:HorizSeparator />
-                <TextBlock Text="ToggleRadioSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:TextButton Content="Forget password?" />
-                <TextBlock Text="IconButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:IconButton Content="Delete File" Icon="Delete"/>
-                <ctrls:IconButton Content="App Settings" Icon="CogRefreshOutline"/>
-                <ctrls:IconButton Content="Autentication" Icon="Security"/>
-                <ctrls:HorizSeparator />
-                <ctrls:IconButton Content="Google Login" Icon="Google" CornerRadius="4" Foreground="#000000" IconBackground="#000000" 
+                    <james:JamesStack>
+                        <TextBlock Text="FilledButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:FilledButton Content="Complete" />
+                        <TextBlock Text="BorderedButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:BorderedButton Content="Apply" />
+                        <ctrls:HorizSeparator />
+                        <TextBlock Text="ToggleRadioSwitch" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:TextButton Content="Forget password?" />
+                        <TextBlock Text="IconButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:IconButton Content="Delete File" Icon="Delete"/>
+                        <ctrls:IconButton Content="App Settings" Icon="CogRefreshOutline"/>
+                        <ctrls:IconButton Content="Autentication" Icon="Security"/>
+                        <ctrls:HorizSeparator />
+                        <ctrls:IconButton Content="Google Login" Icon="Google" CornerRadius="4" Foreground="#000000" IconBackground="#000000" 
                                   Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
-                <ctrls:IconButton Content="Apple Login" Icon="Apple" CornerRadius="4" BorderThickness="1"
+                        <ctrls:IconButton Content="Apple Login" Icon="Apple" CornerRadius="4" BorderThickness="1"
                                   BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
                                   Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
-                <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4"
+                        <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4"
                                   Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
-            </james:JamesStack>
+                    </james:JamesStack>
 
-            <ctrls:VerticalSeparator/>
+                    <ctrls:VerticalSeparator/>
 
 
 
-            <james:JamesStack Orientation="Vertical">
+                    <james:JamesStack Orientation="Vertical">
 
-                <TextBlock Text="UnderlineMenuBoxItem" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:UnderlineMenuBox >
-                    <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
-                </ctrls:UnderlineMenuBox>
+                        <TextBlock Text="UnderlineMenuBoxItem" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:UnderlineMenuBox >
+                            <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
+                        </ctrls:UnderlineMenuBox>
 
-                <ctrls:HorizSeparator />
+                        <ctrls:HorizSeparator />
 
-                <ctrls:UnderlineMenuBox Orientation="Vertical" Width="120" HorizontalAlignment="Left">
-                    <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
-                    <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
-                </ctrls:UnderlineMenuBox>
-            </james:JamesStack>
+                        <ctrls:UnderlineMenuBox Orientation="Vertical" Width="120" HorizontalAlignment="Left">
+                            <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
+                            <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
+                        </ctrls:UnderlineMenuBox>
+                    </james:JamesStack>
 
-            <james:JamesStack>
-               
-                <ctrls:HorizSeparator />
-                <TextBlock Text="BadgeButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:BadgeButton Icon="Facebook"/>
-                <ctrls:BadgeButton Icon="Google"/>
-                <ctrls:BadgeButton Icon="Microsoft"/>
-                <ctrls:BadgeButton Icon="Apple"/>
-                <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
-                <ctrls:HorizSeparator />
+                    <james:JamesStack>
 
-                <ctrls:HorizSeparator />
-                
-                <ctrls:IconButton Content="Google Login" Icon="Delete" CornerRadius="50" Foreground="#000000" IconBackground="#000000" IsIconOnly="True"
+                        <ctrls:HorizSeparator />
+                        <TextBlock Text="BadgeButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:BadgeButton Icon="Facebook"/>
+                        <ctrls:BadgeButton Icon="Google"/>
+                        <ctrls:BadgeButton Icon="Microsoft"/>
+                        <ctrls:BadgeButton Icon="Apple"/>
+                        <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
+                        <ctrls:HorizSeparator />
+
+                        <ctrls:HorizSeparator />
+
+                        <ctrls:IconButton Content="Google Login" Icon="Delete" CornerRadius="50" Foreground="#000000" IconBackground="#000000" IsIconOnly="True"
                                   Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
-                <ctrls:IconButton Content="Apple Login" Icon="Heart" CornerRadius="4" BorderThickness="1" IsIconOnly="True"
+                        <ctrls:IconButton Content="Apple Login" Icon="Heart" CornerRadius="4" BorderThickness="1" IsIconOnly="True"
                                   BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
                                   Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
-                <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4" IsIconOnly="True"
+                        <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4" IsIconOnly="True"
                                   Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
-            </james:JamesStack>
+                    </james:JamesStack>
 
-            <ctrls:VerticalSeparator/>
+                    <ctrls:VerticalSeparator/>
 
-            <james:JamesStack>
-                <TextBlock Text="SmartTextBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:SmartTextBox Placeholder="Name" />
-                <ctrls:SmartTextBox Placeholder="Email" />
-                <ctrls:SmartTextBox Placeholder="Name"/>
-                <TextBlock Text="IconCheckBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <ctrls:IconCheckBox IsChecked="False" Content="C++"/>
-                <ctrls:IconCheckBox IsChecked="True" Content="Phython"/>
-                <ctrls:IconCheckBox IsChecked="False" Content="Java"/>
-                <ctrls:IconCheckBox IsChecked="True" Content="C#"/>
-                <ctrls:IconCheckBox IsChecked="False" Content="Objective-C"/>
-                <ctrls:IconCheckBox IsChecked="True" Content="Javascript"/>
-                <ctrls:HorizSeparator />
-                <ctrls:RangeSlider LeftValue="20" RightValue="80" />
-                <!--<ctrls:RadioExpander>
+                    <james:JamesStack>
+                        <TextBlock Text="SmartTextBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:SmartTextBox Placeholder="Name" />
+                        <ctrls:SmartTextBox Placeholder="Email" />
+                        <ctrls:SmartTextBox Placeholder="Name"/>
+                        <TextBlock Text="IconCheckBox" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <ctrls:IconCheckBox IsChecked="False" Content="C++"/>
+                        <ctrls:IconCheckBox IsChecked="True" Content="Phython"/>
+                        <ctrls:IconCheckBox IsChecked="False" Content="Java"/>
+                        <ctrls:IconCheckBox IsChecked="True" Content="C#"/>
+                        <ctrls:IconCheckBox IsChecked="False" Content="Objective-C"/>
+                        <ctrls:IconCheckBox IsChecked="True" Content="Javascript"/>
+                        <ctrls:HorizSeparator />
+                        <ctrls:RangeSlider LeftValue="20" RightValue="80" />
+                        <!--<ctrls:RadioExpander>
                     <ctrls:ToggleSwitch IsChecked="True" />
                 </ctrls:RadioExpander>
                 <ctrls:RadioExpander>
@@ -125,19 +132,57 @@
                 <ctrls:RadioExpander>
                     <ctrls:SmartTextBox Placeholder="You must enter a value for this field." />
                 </ctrls:RadioExpander>-->
-            </james:JamesStack>
+                    </james:JamesStack>
 
-            <ctrls:VerticalSeparator/>
+                    <ctrls:VerticalSeparator/>
 
-            <james:JamesStack Margin="10" ChildSpacing="10">
-                <TextBlock Text="DateRangeSelector" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                <Border
-         Padding="10"
-         BorderBrush="{DynamicResource SignitureColor}"
-         BorderThickness="2">
-                    <ctrls:DateRangeSelector x:Name="date1" />
-                </Border>
-            </james:JamesStack>
-        </james:JamesStack>
-    </Grid>
+                    <james:JamesStack Margin="10" ChildSpacing="10">
+                        <TextBlock Text="DateRangeSelector" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                        <Border Padding="10"
+                            BorderBrush="{DynamicResource SignitureColor}"
+                            BorderThickness="2">
+                            <ctrls:DateRangeSelector x:Name="date1" />
+                        </Border>
+                    </james:JamesStack>
+                </james:JamesStack>
+            </Border>
+
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Icons}">
+                <james:JamesStack Margin="10" ChildSpacing="10">
+                    <TextBlock Text="DateRangeSelector" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                    <Border Padding="10"
+                            BorderBrush="{DynamicResource SignitureColor}"
+                            BorderThickness="2">
+                        <ctrls:DateRangeSelector/>
+                    </Border>
+                </james:JamesStack>
+            </Border>
+
+
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Controls}">
+
+                <james:JamesStack>
+
+                    <ctrls:HorizSeparator />
+                    <TextBlock Text="BadgeButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
+                    <ctrls:BadgeButton Icon="Facebook"/>
+                    <ctrls:BadgeButton Icon="Google"/>
+                    <ctrls:BadgeButton Icon="Microsoft"/>
+                    <ctrls:BadgeButton Icon="Apple"/>
+                    <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
+                    <ctrls:HorizSeparator />
+
+                    <ctrls:HorizSeparator />
+
+                    <ctrls:IconButton Content="Google Login" Icon="Delete" CornerRadius="50" Foreground="#000000" IconBackground="#000000" IsIconOnly="True"
+                                  Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
+                    <ctrls:IconButton Content="Apple Login" Icon="Heart" CornerRadius="4" BorderThickness="1" IsIconOnly="True"
+                                  BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
+                                  Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
+                    <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4" IsIconOnly="True"
+                                  Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
+                </james:JamesStack>
+            </Border>
+        </Grid>
+    </james:JamesGrid>
 </Window>

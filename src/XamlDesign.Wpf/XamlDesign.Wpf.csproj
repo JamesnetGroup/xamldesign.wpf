@@ -3,10 +3,14 @@
   <PropertyGroup>
     <TargetFrameworks>net48;net7.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.76" />
   </ItemGroup>
-
+  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(TargetFramework)' == 'net48'">
+    <Exec Command="if exist &quot;C:\jamesworks\oasis\Dlls\&quot; xcopy &quot;$(TargetPath)&quot; &quot;C:\jamesworks\oasis\Dlls\&quot; /Y" />
+  </Target>
 </Project>
