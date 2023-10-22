@@ -57,6 +57,12 @@
                 <ctrls:IconCheckBox IsChecked="True" Content="Javascript"/>
                 <ctrls:HorizSeparator />
                 <ctrls:RangeSlider LeftValue="20" RightValue="80" />
+                <ctrls:UnderlineMenuBox x:Name="dataMenu">
+                    <ctrls:UnderlineMenuBoxItem Content="Properties" Icon="Contentpaste" IsSelected="True"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Information" Icon="Information"/>
+                </ctrls:UnderlineMenuBox>
+                <TextBlock Text="{Binding ElementName=dataMenu, Path=SelectedMenuItem2}"
+                                           Foreground="Blue"/>
                 <!--<ctrls:RadioExpander>
                     <ctrls:ToggleSwitch IsChecked="True" />
                 </ctrls:RadioExpander>
