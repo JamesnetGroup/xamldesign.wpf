@@ -42,14 +42,14 @@
                 <units:BadgeButton Icon="Apple"/>
                 <units:BadgeButton Icon="MicrosoftVisualStudio"/>
                 <units:HorizSeparator />
-                <units:HorizMenuBox>
-                    <units:HorizMenuBoxItem Content="Store"/>
-                    <units:HorizMenuBoxItem Content="Books"/>
-                    <units:HorizMenuBoxItem Content="Orders"/>
-                    <units:HorizMenuBoxItem Content="Lectures"/>
-                    <units:HorizMenuBoxItem Content="GitHub"/>
-                    <units:HorizMenuBoxItem Content="Youtube"/>
-                </units:HorizMenuBox>
+                <units:UnderlineMenuBox>
+                    <units:UnderlineMenuBoxItem Content="Store"/>
+                    <units:UnderlineMenuBoxItem Content="Books"/>
+                    <units:UnderlineMenuBoxItem Content="Orders"/>
+                    <units:UnderlineMenuBoxItem Content="Lectures"/>
+                    <units:UnderlineMenuBoxItem Content="GitHub"/>
+                    <units:UnderlineMenuBoxItem Content="Youtube"/>
+                </units:UnderlineMenuBox>
                 <units:HorizSeparator />
                 <units:IconButton Content="Heart" Icon="Heart" />
                 <units:IconButton
