@@ -8,12 +8,18 @@
         xmlns:cnvts="clr-namespace:XamlDesign.Wpf.Local.Converters;assembly=XamlDesign.Wpf"
         mc:Ignorable="d"
         Background="#191919"
+        
         Title="MainWindow">
     <james:JamesGrid Rows="Auto, *" Columns="*">
         <ctrls:UnderlineMenuBox x:Name="menu" HorizontalAlignment="Left">
             <ctrls:UnderlineMenuBoxItem Content="Buttons" Icon="Apple" IsSelected="True"/>
-            <ctrls:UnderlineMenuBoxItem Content="Icons" Icon="Microsoft"/>
-            <ctrls:UnderlineMenuBoxItem Content="Controls" Icon="Instagram"/>
+            <ctrls:UnderlineMenuBoxItem Content="Calendar/Date_Related" Icon="Microsoft"/>
+            <ctrls:UnderlineMenuBoxItem Content="Input/Related" Icon="Instagram"/>
+            <ctrls:UnderlineMenuBoxItem Content="Toggles/electors" Icon="Instagram"/>
+            <ctrls:UnderlineMenuBoxItem Content="Input/Related" Icon="Instagram"/>
+            <ctrls:UnderlineMenuBoxItem Content="TSeparator" Icon="Instagram"/>
+            <ctrls:UnderlineMenuBoxItem Content="Schedule" Icon="CalendarBlankOutline"/>
+            
         </ctrls:UnderlineMenuBox>
         <Grid>
             <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Buttons}">
@@ -147,41 +153,43 @@
                 </james:JamesStack>
             </Border>
 
-            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Icons}">
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Calendar/Date_Related}">
                 <james:JamesStack Margin="10" ChildSpacing="10">
-                    <TextBlock Text="DateRangeSelector" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                    <Border Padding="10"
-                            BorderBrush="{DynamicResource SignitureColor}"
-                            BorderThickness="2">
-                        <ctrls:DateRangeSelector/>
-                    </Border>
+
+                </james:JamesStack>
+            </Border>
+
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Input/Related}">
+
+                <james:JamesStack>
+                    <ctrls:IconButton/>
+                </james:JamesStack>
+            </Border>
+
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=TSeparator}">
+
+                <james:JamesStack>
+                    <ctrls:IconButton/>
                 </james:JamesStack>
             </Border>
 
 
-            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Controls}">
+            <Border Visibility="{Binding ElementName=menu, Path=SelectedMenuItem, Converter={cnvts:EqualityToVisibilityConverter}, ConverterParameter=Schedule}">
 
-                <james:JamesStack>
 
-                    <ctrls:HorizSeparator />
-                    <TextBlock Text="BadgeButton" Foreground="#aaFFFFFF" FontSize="15" Margin="20" HorizontalAlignment="Center"/>
-                    <ctrls:BadgeButton Icon="Facebook"/>
-                    <ctrls:BadgeButton Icon="Google"/>
-                    <ctrls:BadgeButton Icon="Microsoft"/>
-                    <ctrls:BadgeButton Icon="Apple"/>
-                    <ctrls:BadgeButton Icon="MicrosoftVisualStudio"/>
-                    <ctrls:HorizSeparator />
-
-                    <ctrls:HorizSeparator />
-
-                    <ctrls:IconButton Content="Google Login" Icon="Delete" CornerRadius="50" Foreground="#000000" IconBackground="#000000" IsIconOnly="True"
-                                  Background="#f4be4e" MouseOverBackground="#daaa46" PressedBackground="#c39941"/>
-                    <ctrls:IconButton Content="Apple Login" Icon="Heart" CornerRadius="4" BorderThickness="1" IsIconOnly="True"
-                                  BorderBrush="#171717" MouseOverBorderBrush="#151515" PressedBorderBrush="#0f0f0f"
-                                  Background="#292929" MouseOverBackground="#232323" PressedBackground="#202020"/>
-                    <ctrls:IconButton Content="Microsoft Login" Icon="Microsoft" CornerRadius="4" IsIconOnly="True"
-                                  Background="#d87e35" MouseOverBackground="#c17130" PressedBackground="#b26424"/>
-                </james:JamesStack>
+                <james:JamesGrid Rows="Auto, Auto" Columns="*"
+                                 HorizontalAlignment="Center">
+                    <james:JamesStack Orientation="Horizontal" VerticalAlignment="Top" Height="50" Margin="20" >
+                        <ctrls:IconButton Width="200" Icon="CalendarMonth" Content="Checkin"/>
+                        <ctrls:IconButton Width="200" Icon="CalendarMonth" Content="Checkout"/>
+                    </james:JamesStack>
+                    <Border Padding="10"
+                            BorderBrush="{DynamicResource SignitureColor}"
+                            BorderThickness="2">
+                        <ctrls:DateRangeSelector />
+                    </Border>
+                </james:JamesGrid>
+                
             </Border>
         </Grid>
     </james:JamesGrid>
