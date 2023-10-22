@@ -1,6 +1,7 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RageSlider.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/BadgeButton.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconButton.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ComboBoxToggleButton.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RadioExpander.xaml" />
