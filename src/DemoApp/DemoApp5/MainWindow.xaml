@@ -46,12 +46,12 @@
             <ctrls:VerticalSeparator/>
 
             <james:JamesStack>
-                <ListBox>
-                    <ListBoxItem Tag="Mambership"/>
-                    <ListBoxItem Tag="Stores"/>
-                    <ListBoxItem Tag="Search"/>
-                    <ListBoxItem Tag="Bag"/>
-                </ListBox>
+                <ctrls:UnderlineMenuBox>
+                    <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
+                    <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
+                </ctrls:UnderlineMenuBox>
                 <ctrls:HorizSeparator />
 
                 <ctrls:BadgeButton Icon="Facebook"/>

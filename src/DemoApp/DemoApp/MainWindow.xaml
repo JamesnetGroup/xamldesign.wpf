@@ -42,6 +42,15 @@
                 <units:BadgeButton Icon="Apple"/>
                 <units:BadgeButton Icon="MicrosoftVisualStudio"/>
                 <units:HorizSeparator />
+                <units:HorizMenuBox>
+                    <units:HorizMenuBoxItem Content="Store"/>
+                    <units:HorizMenuBoxItem Content="Books"/>
+                    <units:HorizMenuBoxItem Content="Orders"/>
+                    <units:HorizMenuBoxItem Content="Lectures"/>
+                    <units:HorizMenuBoxItem Content="GitHub"/>
+                    <units:HorizMenuBoxItem Content="Youtube"/>
+                </units:HorizMenuBox>
+                <units:HorizSeparator />
                 <units:IconButton Content="Heart" Icon="Heart" />
                 <units:IconButton
                     Background="Transparent"

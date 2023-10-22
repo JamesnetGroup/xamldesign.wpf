@@ -143,51 +143,9 @@
         <Style TargetType="{x:Type ctrls:CalendarListItem}">
         </Style>
 
-
-        <Style TargetType="{x:Type ListBox}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ListBox}">
-                        <ItemsPresenter/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="ItemsPanel">
-                <Setter.Value>
-                    <ItemsPanelTemplate>
-                        <UniformGrid Columns="4"/>
-                    </ItemsPanelTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        
-        <Style TargetType="{x:Type ListBoxItem}">
-            <Setter Property="Foreground" Value="#FFFFFF" />
-            <Setter Property="Background" Value="#191919"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                        <Border Background="{TemplateBinding Background}">
-                            <james:JamesGrid Rows="Auto, Auto" Columns="*">
-                                <TextBlock Text="{TemplateBinding Tag}" Padding="10" HorizontalAlignment="Center"/>
-                                <Border x:Name="line"
-                                 Height="3" Background="Transparent"/>
-                            </james:JamesGrid>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter Property="Background" Value="#252525"/>
-                                <Setter TargetName="line" Property="Background" Value="{DynamicResource PressedColor}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#252525"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                    
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <Style TargetType="{x:Type ctrls:UnderlineMenuBox}">
+            <Setter Property="UnderlineBrush" Value="{DynamicResource SignitureColor}"/>
+        </Style>       
 
     </Application.Resources>
 </Application>

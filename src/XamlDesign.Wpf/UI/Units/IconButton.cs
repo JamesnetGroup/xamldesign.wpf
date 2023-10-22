@@ -199,6 +199,22 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region Icon
+
+        public static readonly DependencyProperty IconProperty =
+            DependencyProperty.Register(
+                "Icon",
+                typeof(IconType),
+                typeof(IconButton),
+                new FrameworkPropertyMetadata());
+
+        public IconType Icon
+        {
+            get => (IconType)GetValue(IconProperty);
+            set => SetValue(IconProperty, value);
+        }
+        #endregion
+
         #region IconWidth
 
         public static readonly DependencyProperty IconWidthProperty =
@@ -251,15 +267,5 @@ namespace XamlDesign.Wpf.UI.Units
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(IconButton), new FrameworkPropertyMetadata(typeof(IconButton)));
         }
-
-        public IconType Icon
-        {
-            get { return (IconType)GetValue(IconProperty); }
-            set { SetValue(IconProperty, value); }
-        }
-
-        public static readonly DependencyProperty IconProperty =
-            DependencyProperty.Register("Icon", typeof(IconType), typeof(IconButton), new PropertyMetadata(IconType.CalendarMonth));
-
     }
 }
