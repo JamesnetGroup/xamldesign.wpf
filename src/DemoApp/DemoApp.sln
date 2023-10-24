@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp4", "DemoApp4\DemoAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp5", "DemoApp5\DemoApp5.csproj", "{A0DE24A4-8387-46E2-AA49-BC9558B710EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkAppTest", "FrameworkAppTest\FrameworkAppTest.csproj", "{CAFD7C1C-8A03-4AE2-92F3-938A7400EC52}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderlineTest", "UnderlineTest\UnderlineTest.csproj", "{5641836B-548A-4672-8BCE-CE9CB425172F}"
 EndProject
 Global
@@ -49,10 +47,6 @@ Global
 		{A0DE24A4-8387-46E2-AA49-BC9558B710EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0DE24A4-8387-46E2-AA49-BC9558B710EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0DE24A4-8387-46E2-AA49-BC9558B710EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAFD7C1C-8A03-4AE2-92F3-938A7400EC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAFD7C1C-8A03-4AE2-92F3-938A7400EC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAFD7C1C-8A03-4AE2-92F3-938A7400EC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAFD7C1C-8A03-4AE2-92F3-938A7400EC52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5641836B-548A-4672-8BCE-CE9CB425172F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5641836B-548A-4672-8BCE-CE9CB425172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5641836B-548A-4672-8BCE-CE9CB425172F}.Release|Any CPU.ActiveCfg = Release|Any CPU

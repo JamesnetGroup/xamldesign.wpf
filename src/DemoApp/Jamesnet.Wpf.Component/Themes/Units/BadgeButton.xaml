@@ -1,0 +1,62 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:james="https://jamesnet.dev/xaml/presentation"
+    xmlns:units="clr-namespace:Jamesnet.Wpf.Component.UI.Units">
+
+    <Style TargetType="{x:Type units:BadgeButton}">
+        <Setter Property="Background" Value="#EFB13A"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="BorderBrush" Value="#EFB13A"/>
+        <Setter Property="IconBackground" Value="#000000"/>
+        <Setter Property="MouseOverBackground" Value="#EF9A15"/>
+        <Setter Property="MouseOverForeground" Value="#000000"/>
+        <Setter Property="MouseOverBorderBrush" Value="#EF9A15"/>
+        <Setter Property="PressedBackground" Value="#EFEF9A15"/>
+        <Setter Property="PressedForeground" Value="#000000"/>
+        <Setter Property="PressedBorderBrush" Value="#EFEF9A15"/>
+        <Setter Property="IconMouseOverBackground" Value="#FFFFFF"/>
+        <Setter Property="IconPressedBackground" Value="#000000"/>
+        <Setter Property="CornerRadius" Value="50"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="IconWidth" Value="20"/>
+        <Setter Property="IconHeight" Value="20"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:BadgeButton}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                SnapsToDevicePixels="True"
+                                UseLayoutRounding="True"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding CornerRadius}"
+                                Padding="{TemplateBinding Padding}"/>
+                        <james:JamesIcon x:Name="icon" Icon="{TemplateBinding Icon}"
+                                            Width="{TemplateBinding IconWidth}" 
+                                            Height="{TemplateBinding IconHeight}" 
+                                            Fill="{TemplateBinding IconBackground}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBorderBrush}"/>
+                            <Setter Property="Fill" TargetName="icon" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconMouseOverBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBorderBrush}"/>
+                            <Setter Property="Fill" TargetName="icon" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconPressedBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

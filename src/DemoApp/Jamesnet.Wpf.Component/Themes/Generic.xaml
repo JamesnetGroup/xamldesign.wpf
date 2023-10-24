@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/RageSlider.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/BadgeButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/IconButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/ComboBoxToggleButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/RadioExpander.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/CalendarComboBox.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/CalendarListItem.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/CalendarListBox.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/RangeCalendar.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/DateRangeSelector.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/ToggleRadioSwitch.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/UnderlineMenuBoxItem.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/UnderlineMenuBox.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/IconSwitch.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/ToggleSwitch.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/IconCheckBox.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/SmartTextBox.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/VerticalSeparator.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/HorizSeparator.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/BorderedButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/FilledButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/TextButton.xaml" />
+        <ResourceDictionary Source="/Jamesnet.Wpf.Component;component/Themes/Units/SearchTextBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
