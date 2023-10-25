@@ -22,6 +22,8 @@
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/BorderedButton.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/FilledButton.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/TextButton.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/PropertyListItem.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/PropertyList.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/SearchTextBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
