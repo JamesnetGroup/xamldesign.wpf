@@ -62,10 +62,12 @@
                     <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>
                 </ctrls:UnderlineMenuBox>
 
+                    <ctrls:PropertyList TargetObject="{Binding ElementName=icon}"/>
+
                 <ctrls:HorizSeparator />
 
                 <ctrls:UnderlineMenuBox Orientation="Vertical" Width="120" HorizontalAlignment="Left">
-                    <ctrls:UnderlineMenuBoxItem Content="Mambership" Icon="Microsoft"/>
+                    <ctrls:UnderlineMenuBoxItem x:Name="icon" Content="Mambership" Icon="Microsoft"/>
                     <ctrls:UnderlineMenuBoxItem Content="Stores" Icon="Apple"/>
                     <ctrls:UnderlineMenuBoxItem Content="Search" Icon="Facebook"/>
                     <ctrls:UnderlineMenuBoxItem Content="Bag" Icon="Instagram"/>

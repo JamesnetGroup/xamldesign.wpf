@@ -12,16 +12,16 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:PropertyList}">
-                    <james:JamesGrid Rows="Auto, *" Columns="*"
+                    <james:JamesGrid Rows="*" Columns="*"
                                      Background="{TemplateBinding Background}">
                         <Border Background="{TemplateBinding Background}"
                                 BorderThickness="0"
                                 Grid.IsSharedSizeScope="True"
                                 BorderBrush="{TemplateBinding BorderBrush}">
-                            <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                                          CanContentScroll="False">
+                            <units:SimpleScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                      CanContentScroll="False">
                                 <ItemsPresenter/>
-                            </ScrollViewer>
+                            </units:SimpleScrollViewer>
                         </Border>
                     </james:JamesGrid>
 

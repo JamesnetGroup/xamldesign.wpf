@@ -9,16 +9,16 @@ namespace XamlDesign.Wpf.UI.Units
     {
         #region TargetObject
 
-        public static readonly DependencyProperty TagetObjectProperty = DependencyProperty.Register(
-            "TagetObject",
+        public static readonly DependencyProperty TargetObjectProperty = DependencyProperty.Register(
+            "TargetObject",
             typeof(object),
             typeof(PropertyList),
             new FrameworkPropertyMetadata(null, OnTargetObjectChanged));
 
-        public object TagetObject
+        public object TargetObject
         {
-            get { return GetValue(TagetObjectProperty); }
-            set { SetValue(TagetObjectProperty, value); }
+            get { return GetValue(TargetObjectProperty); }
+            set { SetValue(TargetObjectProperty, value); }
         }
 
         private static void OnTargetObjectChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)

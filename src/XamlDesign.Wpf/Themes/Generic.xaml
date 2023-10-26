@@ -25,5 +25,6 @@
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/PropertyListItem.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/PropertyList.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/SearchTextBox.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/SimpleScrollViewer.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
