@@ -14,6 +14,7 @@
         <SolidColorBrush x:Key="SeparatorColor" Color="#0FFFFFFF"/>
         <SolidColorBrush x:Key="TextBoxBoxBorderColor" Color="#7f2a24"/>
         <SolidColorBrush x:Key="BaseCheckBoxColor" Color="#842d27"/>
+        <SolidColorBrush x:Key="BaseUnderlineColor" Color="#33ea5247"/>
 
         <SolidColorBrush x:Key="FontColor" Color="#FFFFFF"/>
         <SolidColorBrush x:Key="PlaceholderFontColor" Color="#77FFFFFF"/>
@@ -144,7 +145,8 @@
         </Style>
 
         <Style TargetType="{x:Type ctrls:UnderlineMenuBox}" >
-            <Setter Property="UnderlineBrush" Value="{DynamicResource SignitureColor}"/>
+            <Setter Property="UnderlineBrush" Value="{DynamicResource BaseUnderlineColor}"/>
+            <Setter Property="SelectedUnderlineBrush" Value="{DynamicResource SignitureColor}"/>
         </Style>
 
         <Style TargetType="{x:Type ListBox}">

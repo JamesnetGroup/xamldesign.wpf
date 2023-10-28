@@ -170,6 +170,9 @@
 
                 <james:JamesStack>
                     <ctrls:IconButton/>
+
+                    <ctrls:ThemeSwitch IsChecked="True"/>
+                    <ctrls:ThemeSwitch IsChecked="False"/>
                 </james:JamesStack>
             </Border>
 

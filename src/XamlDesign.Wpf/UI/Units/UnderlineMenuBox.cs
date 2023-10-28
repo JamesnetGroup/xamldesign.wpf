@@ -33,6 +33,22 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region SelectedUnderlineBrush
+
+        public static readonly DependencyProperty SelectedUnderlineBrushProperty =
+            DependencyProperty.Register(
+                "SelectedUnderlineBrush",
+                typeof(Brush),
+                typeof(UnderlineMenuBox),
+                new FrameworkPropertyMetadata());
+
+        public Brush SelectedUnderlineBrush
+        {
+            get => (Brush)GetValue(SelectedUnderlineBrushProperty);
+            set => SetValue(SelectedUnderlineBrushProperty, value);
+        }
+        #endregion
+
         #region Orientation
 
         public static readonly DependencyProperty OrientationProperty =

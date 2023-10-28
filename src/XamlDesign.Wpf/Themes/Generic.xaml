@@ -11,6 +11,7 @@
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/RangeCalendar.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/DateRangeSelector.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ToggleRadioSwitch.xaml" />
+        <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/ThemeSwitch.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/UnderlineMenuBoxItem.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/UnderlineMenuBox.xaml" />
         <ResourceDictionary Source="/XamlDesign.Wpf;component/Themes/Units/IconSwitch.xaml" />

@@ -18,14 +18,15 @@
                                              Icon="{TemplateBinding Icon}"/>
                             <TextBlock Text="{TemplateBinding Content}" Padding="10 10 15 10" HorizontalAlignment="Left"/>
                             <Border x:Name="line"
+                                    Background="{Binding RelativeSource={RelativeSource AncestorType=units:UnderlineMenuBox}, Path=UnderlineBrush}"
                                     Grid.ColumnSpan="2"
-                                    Height="3" Background="Transparent"/>
+                                    Height="3"/>
                         </james:JamesGrid>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="#252525"/>
-                            <Setter TargetName="line" Property="Background" Value="{Binding RelativeSource={RelativeSource AncestorType=units:UnderlineMenuBox}, Path=UnderlineBrush}"/>
+                            <Setter TargetName="line" Property="Background" Value="{Binding RelativeSource={RelativeSource AncestorType=units:UnderlineMenuBox}, Path=SelectedUnderlineBrush}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="#252525"/>
