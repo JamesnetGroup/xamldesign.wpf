@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using XamlDesign.Wpf.Local.Models;
 
 namespace XamlDesign.Wpf.UI.Units

@@ -88,7 +88,7 @@
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
                     <Thumb x:Name="thumb" Style="{StaticResource ScrollBarThumb}" 
-                           Margin="2" 
+                           Margin="0" 
                            Background="{StaticResource HorizontalNormalBrush}"  
                            BorderBrush="{StaticResource HorizontalNormalBorderBrush}" />
                 </Track.Thumb>
@@ -190,7 +190,7 @@
                         <ScrollBar x:Name="PART_HorizontalScrollBar"
                                    Style="{StaticResource SCROLLBAR}"
                                    Grid.Column="0" Grid.Row="1" 
-                                   Margin="0 0 0 0" 
+                                   Margin="0 0 0 0"
                                    AutomationProperties.AutomationId="HorizontalScrollBar" 
                                    Cursor="Arrow" 
                                    Maximum="{TemplateBinding ScrollableWidth}" 

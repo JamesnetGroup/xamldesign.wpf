@@ -9,11 +9,11 @@ namespace XamlDesign.Wpf.UI.Units
         #region HeaderBackground
 
         public static readonly DependencyProperty HeaderBackgroundProperty =
-            DependencyProperty.Register(
+            DependencyProperty.RegisterAttached(
                 "HeaderBackground",
                 typeof(Brush),
                 typeof(PropertyListItem),
-                new FrameworkPropertyMetadata());
+                new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.Inherits));
 
         public Brush HeaderBackground
         {
@@ -25,16 +25,20 @@ namespace XamlDesign.Wpf.UI.Units
         #region HeaderForeground
 
         public static readonly DependencyProperty HeaderForegroundProperty =
-            DependencyProperty.Register(
+            DependencyProperty.RegisterAttached(
                 "HeaderForeground",
                 typeof(Brush),
                 typeof(PropertyListItem),
-                new FrameworkPropertyMetadata());
+                new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.Inherits));
 
-        public Brush HeaderForeground
+        public static void SetHeaderForeground(UIElement element, Brush value)
         {
-            get => (Brush)GetValue(HeaderForegroundProperty);
-            set => SetValue(HeaderForegroundProperty, value);
+            element.SetValue(HeaderForegroundProperty, value);
+        }
+
+        public static Brush GetHeaderForeground(UIElement element)
+        {
+            return (Brush)element.GetValue(HeaderForegroundProperty);
         }
         #endregion
         static PropertyListItem()

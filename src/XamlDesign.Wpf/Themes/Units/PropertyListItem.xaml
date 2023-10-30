@@ -6,12 +6,11 @@
 
     <Style TargetType="{x:Type units:PropertyListItem}">
         <Setter Property="Background" Value="#191919"/>
-        <Setter Property="HeaderBackground" Value="#292929"/>
         <Setter Property="BorderBrush" Value="#444444"/>
-        <Setter Property="Foreground" Value="#FFFFFF"/>
-        <Setter Property="HeaderBackground" Value="#292929"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -25,9 +24,8 @@
                                 <ColumnDefinition Width="*" MinWidth="150"/>
                             </Grid.ColumnDefinitions>
                             <Label Background="{TemplateBinding HeaderBackground}"
-                                   FontFamily="Roboto"
                                    FontWeight="SemiBold"
-                                   Foreground="#FFFFFF"
+                                   Foreground="{TemplateBinding HeaderForeground}"
                                    BorderThickness="0 0 0.59 0"
                                    BorderBrush="{TemplateBinding BorderBrush}"
                                    Padding="8 5 8 5">
@@ -39,6 +37,7 @@
                                      MinWidth="150"
                                      Text="{Binding Value}"
                                      Background="Transparent"
+                                     CaretBrush="{TemplateBinding Foreground}"
                                      Foreground="{TemplateBinding Foreground}"
                                      VerticalContentAlignment="Center"
                                      Padding="8 0 8 0"
@@ -47,7 +46,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="BorderBrush" Value="DarkGray"/>
+                            <!--<Setter Property="BorderBrush" Value="DarkGray"/>-->
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
