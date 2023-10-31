@@ -4,7 +4,7 @@
     <TargetFrameworks>net48;net7.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
-    <Version>1.0.0.10</Version>
+    <Version>1.0.0.14</Version>
     <Authors>jamesnet, lukewire, vickyqu</Authors>
     <Product>jamesnet</Product>
     <Copyright>jamesnet</Copyright>
@@ -17,7 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.88" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.98" />
+    <PackageReference Include="ThemeSwitch" Version="1.0.0.6" />
   </ItemGroup>
 
   <ItemGroup>
