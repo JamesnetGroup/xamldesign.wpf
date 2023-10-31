@@ -9,10 +9,10 @@
     <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888" />
     <SolidColorBrush x:Key="NormalBrush" Color="#333333" />
     <SolidColorBrush x:Key="NormalBorderBrush" Color="#33000000" />
-    <SolidColorBrush x:Key="MouseOverBrush" Color="#77000000"/>
+    <SolidColorBrush x:Key="MouseOverBrush" Color="#bbaaaaaa"/>
     <SolidColorBrush x:Key="SelectedBrush" Color="#463714" />
-    <SolidColorBrush x:Key="HorizontalNormalBrush" Color="#55555555" />
-    <SolidColorBrush x:Key="HorizontalNormalBorderBrush" Color="#33000000" />
+    <SolidColorBrush x:Key="HorizontalNormalBrush" Color="#99aaaaaa" />
+    <SolidColorBrush x:Key="HorizontalNormalBorderBrush" Color="#99aaaaaa" />
 
     <LinearGradientBrush x:Key="ListBoxBackgroundBrush"  StartPoint="0,0" EndPoint="1,0.001">
         <GradientBrush.GradientStops>
@@ -89,6 +89,7 @@
                 <Track.Thumb>
                     <Thumb x:Name="thumb" Style="{StaticResource ScrollBarThumb}" 
                            Margin="0" 
+                            BorderThickness="0"
                            Background="{StaticResource HorizontalNormalBrush}"  
                            BorderBrush="{StaticResource HorizontalNormalBorderBrush}" />
                 </Track.Thumb>
@@ -118,7 +119,8 @@
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
                     <Thumb  x:Name="thumb" Style="{StaticResource ScrollBarThumb}"  
-                            Margin="2" Background="{StaticResource NormalBrush}" 
+                            Margin="0" Background="{StaticResource NormalBrush}" 
+                            BorderThickness="0"
                             BorderBrush="{StaticResource NormalBorderBrush}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
@@ -141,11 +143,11 @@
         <Style.Triggers>
             <Trigger Property="Orientation" Value="Horizontal">
                 <Setter Property="Width" Value="Auto" />
-                <Setter Property="Height" Value="16" />
+                <Setter Property="Height" Value="3" />
                 <Setter Property="Template"  Value="{StaticResource HorizontalScrollBar}" />
             </Trigger>
             <Trigger Property="Orientation" Value="Vertical">
-                <Setter Property="Width" Value="16" />
+                <Setter Property="Width" Value="3" />
                 <Setter Property="Height" Value="Auto" />
                 <Setter Property="Template"  Value="{StaticResource VerticalScrollBar}" />
             </Trigger>
