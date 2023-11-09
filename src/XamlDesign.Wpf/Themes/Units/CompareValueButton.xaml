@@ -1,0 +1,118 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:james="https://jamesnet.dev/xaml/presentation"
+    xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units">
+
+    <Style TargetType="{x:Type units:CompareValueButton}">
+        <Setter Property="Background" Value="#EFB13A"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="Value1Foreground" Value="#555555"/>
+        <Setter Property="Value2Foreground" Value="#000000"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="HeaderBackground" Value="#EFB13A"/>
+        <Setter Property="HeaderBorderBrush" Value="Transparent"/>
+        <Setter Property="HeaderBorderThickness" Value="0"/>
+        <Setter Property="HeaderMargin" Value="0"/>
+        <Setter Property="IconBackground" Value="#000000"/>
+        <Setter Property="MouseOverBackground" Value="#EF9A15"/>
+        <Setter Property="MouseOverForeground" Value="#000000"/>
+        <Setter Property="MouseOverBorderBrush" Value="Transparent"/>
+        <Setter Property="PressedBackground" Value="#FFE29216"/>
+        <Setter Property="PressedForeground" Value="#000000"/>
+        <Setter Property="PressedBorderBrush" Value="Transparent"/>
+        <Setter Property="HeaderMouseOverBackground" Value="#EF9A15"/>
+        <Setter Property="HeaderMouseOverBorderBrush" Value="Transparent"/>
+        <Setter Property="IconMouseOverBackground" Value="#000000"/>
+        <Setter Property="HeaderPressedBackground" Value="#FFE29216"/>
+        <Setter Property="HeaderPressedBorderBrush" Value="Transparent"/>
+        <Setter Property="IconPressedBackground" Value="#000000"/>
+        <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="10 5 10 5"/>
+        <Setter Property="HeaderPadding" Value="10"/>
+        <Setter Property="IconWidth" Value="16"/>
+        <Setter Property="IconHeight" Value="16"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Icon" Value="SwapHorizontal"/>
+        <Setter Property="Grid.IsSharedSizeScope" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:CompareValueButton}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                SnapsToDevicePixels="True"
+                                UseLayoutRounding="True"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding CornerRadius}"/>
+                        <Grid x:Name="grid">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*" SharedSizeGroup="SameColumn"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="5*" SharedSizeGroup="SameColumn"/>
+                            </Grid.ColumnDefinitions>
+                            <ContentPresenter x:Name="value1" 
+                                              Grid.Column="0"
+                                              TextBlock.Foreground="{TemplateBinding Value1Foreground}"
+                                              ContentSource="Value1"
+                                              ContentTemplate="{TemplateBinding Value1Template}"
+                                              Margin="{TemplateBinding Padding}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                            <Border x:Name="header"
+                                    Grid.Column="1"
+                                    Background="{TemplateBinding HeaderBackground}"
+                                    BorderBrush="{TemplateBinding HeaderBorderBrush}"
+                                    BorderThickness="{TemplateBinding HeaderBorderThickness}"
+                                    Width="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight}"
+                                    Margin="{TemplateBinding HeaderMargin}"
+                                    Padding="{TemplateBinding HeaderPadding}"
+                                    SnapsToDevicePixels="True"
+                                    UseLayoutRounding="True"
+                                    CornerRadius="{TemplateBinding CornerRadius}">
+                                <james:JamesIcon x:Name="icon" Icon="{TemplateBinding Icon}"
+                                                 Width="{TemplateBinding IconWidth}" 
+                                                 Height="{TemplateBinding IconHeight}" 
+                                                 Fill="{TemplateBinding IconBackground}"/>
+                            </Border>
+                            <ContentPresenter x:Name="value2" 
+                                              ContentSource="Value2"
+                                              Grid.Column="2"
+                                              TextBlock.Foreground="{TemplateBinding Value2Foreground}"
+                                              ContentTemplate="{TemplateBinding Value2Template}"
+                                              Margin="{TemplateBinding Padding}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBorderBrush}"/>
+                            <Setter Property="Background" TargetName="header" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HeaderMouseOverBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="header" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HeaderMouseOverBorderBrush}"/>
+                            <Setter Property="Fill" TargetName="icon" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconMouseOverBackground}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="value1" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverForeground}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="value2" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverForeground}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBorderBrush}"/>
+                            <Setter Property="Background" TargetName="header" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HeaderPressedBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="header" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HeaderPressedBorderBrush}"/>
+                            <Setter Property="Fill" TargetName="icon" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconPressedBackground}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="value1" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedForeground}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="value2" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedForeground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

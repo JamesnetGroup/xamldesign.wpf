@@ -26,7 +26,16 @@
             <ctrls:VerticalSeparator/>
 
             <james:JamesStack>
+                <ctrls:CompareValueButton Value1="001" Value2="002" HeaderMargin="-10 0 -10 0"
+                                          Grid.IsSharedSizeScope="True"/>
+                <ctrls:CompareValueButton Value1="" Value2="003" HeaderMargin="-10 0 -10 0"
+                                          Grid.IsSharedSizeScope="True"/></james:JamesStack>
+
+            <ctrls:VerticalSeparator/>
+            
+            <james:JamesStack>
                 <ctrls:FilledButton Content="Complete" />
+                <ctrls:FilledButton Content="Apply" IsEnabled="False"/>
                 <ctrls:BorderedButton Content="Apply" />
                 <ctrls:HorizSeparator />
                 <ctrls:TextButton Content="Forget password?" />
@@ -61,7 +70,7 @@
                     <ctrls:UnderlineMenuBoxItem Content="Properties" Icon="Contentpaste" IsSelected="True"/>
                     <ctrls:UnderlineMenuBoxItem Content="Information" Icon="Information"/>
                 </ctrls:UnderlineMenuBox>
-                <TextBlock Text="{Binding ElementName=dataMenu, Path=SelectedMenuItem2}"
+                <TextBlock Text="{Binding ElementName=dataMenu, Path=SelectedMenuItem}"
                                            Foreground="Blue"/>
                 <!--<ctrls:RadioExpander>
                     <ctrls:ToggleSwitch IsChecked="True" />

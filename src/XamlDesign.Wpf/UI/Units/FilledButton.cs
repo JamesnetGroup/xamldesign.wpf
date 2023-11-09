@@ -102,6 +102,54 @@ namespace XamlDesign.Wpf.UI.Units
         }
         #endregion
 
+        #region DisabledBackground
+
+        public static readonly DependencyProperty DisabledBackgroundProperty =
+            DependencyProperty.Register(
+                "DisabledBackground",
+                typeof(Brush),
+                typeof(FilledButton),
+                new FrameworkPropertyMetadata());
+
+        public Brush DisabledBackground
+        {
+            get => (Brush)GetValue(DisabledBackgroundProperty);
+            set => SetValue(DisabledBackgroundProperty, value);
+        }
+        #endregion
+
+        #region DisabledBorderBrush
+
+        public static readonly DependencyProperty DisabledBorderBrushProperty =
+            DependencyProperty.Register(
+                "DisabledBorderBrush",
+                typeof(Brush),
+                typeof(FilledButton),
+                new FrameworkPropertyMetadata());
+
+        public Brush DisabledBorderBrush
+        {
+            get => (Brush)GetValue(DisabledBorderBrushProperty);
+            set => SetValue(DisabledBorderBrushProperty, value);
+        }
+        #endregion
+
+        #region DisabledForeground
+
+        public static readonly DependencyProperty DisabledForegroundProperty =
+            DependencyProperty.Register(
+                "DisabledForeground",
+                typeof(Brush),
+                typeof(FilledButton),
+                new FrameworkPropertyMetadata());
+
+        public Brush DisabledForeground
+        {
+            get => (Brush)GetValue(DisabledForegroundProperty);
+            set => SetValue(DisabledForegroundProperty, value);
+        }
+        #endregion
+
         #region CornerRadius
 
         public static readonly DependencyProperty CornerRadiusProperty =

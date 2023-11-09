@@ -9,17 +9,19 @@
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="BorderBrush" Value="#EFB13A"/>
         <Setter Property="MouseOverBackground" Value="#EF9A15"/>
-        <Setter Property="MouseOverForeground" Value="#000000"/>
         <Setter Property="MouseOverBorderBrush" Value="#EF9A15"/>
+        <Setter Property="MouseOverForeground" Value="#000000"/>
         <Setter Property="PressedBackground" Value="#EFEF9A15"/>
-        <Setter Property="PressedForeground" Value="#000000"/>
         <Setter Property="PressedBorderBrush" Value="#EFEF9A15"/>
+        <Setter Property="PressedForeground" Value="#000000"/>
+        <Setter Property="DisabledBackground" Value="#888888"/>
+        <Setter Property="DisabledBorderBrush" Value="#888888"/>
+        <Setter Property="DisabledForeground" Value="#444444"/>
         <Setter Property="CornerRadius" Value="0"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="Margin" Value="0"/>
         <Setter Property="Padding" Value="20 10 20 10"/>
-        <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:FilledButton}">
@@ -37,11 +39,18 @@
                             <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBackground}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBorderBrush}"/>
                             <Setter Property="TextBlock.Foreground" TargetName="content" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverForeground}"/>
+                            <Setter Property="Cursor" Value="Hand"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBackground}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedBorderBrush}"/>
                             <Setter Property="TextBlock.Foreground" TargetName="content" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedForeground}"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledBorderBrush}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="content" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledForeground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
