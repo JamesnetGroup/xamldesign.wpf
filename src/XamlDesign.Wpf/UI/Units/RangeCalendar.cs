@@ -26,6 +26,26 @@ namespace XamlDesign.Wpf.UI.Units
 
         public static readonly DependencyProperty DaysProperty =
             DependencyProperty.Register("Days", typeof(ObservableCollection<DayModel>), typeof(RangeCalendar), new PropertyMetadata(null));
+
+        public static readonly DependencyProperty StartDateProperty = DependencyProperty.Register (
+           "StartDate", typeof (DateTime?), typeof (RangeCalendar), new PropertyMetadata (DateTime.Now));
+
+
+        public DateTime? StartDate
+        {
+            get { return (DateTime?)GetValue (StartDateProperty); }
+            set { SetValue (StartDateProperty, value); }
+        }
+
+        public static readonly DependencyProperty EndDateProperty = DependencyProperty.Register (
+            "EndDate", typeof (DateTime?), typeof (RangeCalendar), new PropertyMetadata (null));
+
+        public DateTime? EndDate
+        {
+            get { return (DateTime?)GetValue (EndDateProperty); }
+            set { SetValue (EndDateProperty, value); }
+        }
+
         private ListBox _daysListBox;
 
         public DateTime? SelectedDate
@@ -193,14 +213,18 @@ namespace XamlDesign.Wpf.UI.Units
             }
 
             Days = daysList;
+            if(StartDate != null && EndDate != null)
+                this.HighlightRange (StartDate.Value, EndDate.Value);
         }
 
-
+        private DateTime? _lastSelectedDate;
         private void DaySelected(int? day)
         {
             if (day.HasValue)
             {
                 DateSelected?.Invoke(new DateTime(SelectedYear, SelectedMonth, day.Value));
+
+                HandleDateSelection (new DateTime (SelectedYear, SelectedMonth, day.Value));
             }
         }
 
@@ -216,6 +240,41 @@ namespace XamlDesign.Wpf.UI.Units
                 });
             }
             return months;
+        }
+
+        private void HandleDateSelection(DateTime selectedDate)
+        {
+            if (!_lastSelectedDate.HasValue)
+            {
+                _lastSelectedDate = selectedDate;
+
+                this.ClearSelectedItem ();
+                this.ClearSelection ();
+
+                StartDate = null;
+                EndDate = null;
+            }
+            else
+            {
+                DateTime start, end;
+
+                if (selectedDate < _lastSelectedDate.Value)
+                {
+                    start = selectedDate;
+                    end = _lastSelectedDate.Value;
+                }
+                else
+                {
+                    start = _lastSelectedDate.Value;
+                    end = selectedDate;
+                }
+
+                this.HighlightRange (start, end);
+                _lastSelectedDate = null;
+
+                StartDate = start;
+                EndDate = end;
+            }
         }
     }
 }

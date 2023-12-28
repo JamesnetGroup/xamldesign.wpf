@@ -1,0 +1,15 @@
+﻿<Window
+    x:Class="DemoApp6.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DemoApp6"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:units="clr-namespace:XamlDesign.Wpf.UI.Units;assembly=XamlDesign.Wpf"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Background="#191919"
+    mc:Ignorable="d">
+    <units:RangeCalendar />
+</Window>
