@@ -2,12 +2,6 @@
 
 A high-performance, open-source UI library for WPF applications focused on learning and customization
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
-[![Stars](https://img.shields.io/github/stars/jamesnet214/xamldesignwpf.svg)](https://github.com/jamesnet214/xamldesignwpf/stargazers)
-[![Issues](https://img.shields.io/github/issues/jamesnet214/xamldesignwpf.svg)](https://github.com/jamesnet214/xamldesignwpf/issues)
-[![NuGet](https://img.shields.io/nuget/v/XamlDesign.Wpf.svg)](https://www.nuget.org/packages/XamlDesign.Wpf)
-
 ## Project Overview
 
 XamlDesign is a comprehensive UI library for WPF applications, designed to enhance learning and provide extensive customization options. It offers a wide range of custom controls, each built with rich DependencyProperties and utilizing DynamicResource for flexible theming.
