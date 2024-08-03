@@ -4,9 +4,9 @@ A high-performance, open-source UI library for WPF applications focused on learn
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
-[![Stars](https://img.shields.io/github/stars/jamesnet214/xamldesign.svg)](https://github.com/jamesnet214/xamldesign/stargazers)
-[![Issues](https://img.shields.io/github/issues/jamesnet214/xamldesign.svg)](https://github.com/jamesnet214/xamldesign/issues)
-[![NuGet](https://img.shields.io/nuget/v/XamlDesign.svg)](https://www.nuget.org/packages/XamlDesign.Wpf)
+[![Stars](https://img.shields.io/github/stars/jamesnet214/xamldesignwpf.svg)](https://github.com/jamesnet214/xamldesignwpf/stargazers)
+[![Issues](https://img.shields.io/github/issues/jamesnet214/xamldesignwpf.svg)](https://github.com/jamesnet214/xamldesignwpf/issues)
+[![NuGet](https://img.shields.io/nuget/v/XamlDesign.Wpf.svg)](https://www.nuget.org/packages/XamlDesign.Wpf)
 
 ## Project Overview
 
