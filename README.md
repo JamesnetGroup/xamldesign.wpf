@@ -14,6 +14,8 @@ XamlDesign is a comprehensive UI library for WPF applications, designed to enhan
 
 <img src="https://github.com/user-attachments/assets/ebce1246-55de-4c40-8576-26f0a081cf87" width="49%"/>
 <img src="https://github.com/user-attachments/assets/3f62f639-94b6-42cf-b2ef-aee3201c103b" width="49%"/>
+<img src="https://github.com/user-attachments/assets/a5dfd480-74f5-4350-9939-ac2336053d02" width="49%"/>
+<img src="https://github.com/user-attachments/assets/4ea2ed96-08c3-485a-b5e7-687dd29e767b" width="49%"/>
 
 ## Key Features and Implementations
 #### 1. Custom Control Development
