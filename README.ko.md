@@ -12,8 +12,11 @@ WPF 애플리케이션을 위한 학습 및 커스터마이징에 중점을 둔 
 
 XamlDesign은 WPF 애플리케이션을 위한 종합적인 UI 라이브러리로, 학습 강화와 광범위한 커스터마이징 옵션 제공을 목표로 설계되었습니다. 풍부한 DependencyProperty를 갖춘 다양한 커스텀 컨트롤을 제공하며, 유연한 테마 적용을 위해 DynamicResource를 활용합니다.
 
+
 <img src="https://github.com/user-attachments/assets/ebce1246-55de-4c40-8576-26f0a081cf87" width="49%"/>
 <img src="https://github.com/user-attachments/assets/3f62f639-94b6-42cf-b2ef-aee3201c103b" width="49%"/>
+<img src="https://github.com/user-attachments/assets/a5dfd480-74f5-4350-9939-ac2336053d02" width="49%"/>
+<img src="https://github.com/user-attachments/assets/4ea2ed96-08c3-485a-b5e7-687dd29e767b" width="49%"/>
 
 ## 주요 기능 및 구현 사항
 #### 1. 커스텀 컨트롤 개발
