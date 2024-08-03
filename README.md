@@ -1,84 +1,99 @@
-# XamlDesign.Wpf
+# XamlDesign [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
 
-![Library Logo](https://github.com/jamesnet214/xamldesignwpf/assets/54387261/d03074ca-4fd3-4566-9e09-dc4888758af3)
+A high-performance, open-source UI library for WPF applications focused on learning and customization
 
-**XamlDesign.Wpf.UI.Units**는 WPF 애플리케이션을 위한 고성능의 오픈소스 UI 라이브러리입니다. 누겟 패키지로 제공되며, 다양한 컨트롤과 유틸리티를 포함하여 WPF 개발의 편리성과 효율성을 극대화해 줍니다.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
+[![Stars](https://img.shields.io/github/stars/jamesnet214/xamldesign.svg)](https://github.com/jamesnet214/xamldesign/stargazers)
+[![Issues](https://img.shields.io/github/issues/jamesnet214/xamldesign.svg)](https://github.com/jamesnet214/xamldesign/issues)
+[![NuGet](https://img.shields.io/nuget/v/XamlDesign.svg)](https://www.nuget.org/packages/XamlDesign.Wpf)
 
-## 🌟 주요 특징
+## Project Overview
 
-- 🚀 **다양한 .NET 지원**: .NET Framework부터 .NET Core까지 모든 주요 버전에서 호환.
-- 🎨 **유연한 커스터마이징**: 풍부한 DependencyProperty로 쉽게 UI를 커스터마이징.
-- 🔗 **참조 라이브러리**: `Jamesnet.Wpf`, `CommunityToolkit.Mvvm`, 그리고 `Prism` 기반.
+XamlDesign is a comprehensive UI library for WPF applications, designed to enhance learning and provide extensive customization options. It offers a wide range of custom controls, each built with rich DependencyProperties and utilizing DynamicResource for flexible theming.
 
-## 📜 Control List
+<img src="https://github.com/user-attachments/assets/ebce1246-55de-4c40-8576-26f0a081cf87" width="49%"/>
+<img src="https://github.com/user-attachments/assets/3f62f639-94b6-42cf-b2ef-aee3201c103b" width="49%"/>
 
-### Buttons
-| Control               | Base Type       | Description                                 | Namespace              | Template Link |
-|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| BorderedButton        | Button          | 버튼에 테두리 스타일이 추가된 컨트롤           | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BorderedButton) |
-| FilledButton          | Button          | 편평한 디자인의 버튼 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/FilledButton) |
-| IconButton            | Button          | 아이콘 포함된 버튼 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconButton) |
-| TextButton            | Button          | 텍스트만으로 구성된 버튼 컨트롤               | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/TextButton) |
-| BadgeButton           | Button          | 아이콘만으로 구성된 버튼 컨트롤               | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/BadgeButton) |
+## Key Features and Implementations
+#### 1. Custom Control Development
+- [x] Extensive range of custom controls built from scratch
+- [x] Rich set of DependencyProperties for each control
+- [x] Implementation of custom ControlTemplates
 
-### Calendar & Date Related
-| Control               | Base Type       | Description                                 | Namespace              | Template Link |
-|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| CalendarComboBox      | ComboBox        | 달력 선택 기능이 추가된 콤보 박스           | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarComboBox) |
-| CalendarListBox       | ListBox         | 달력 형태로 아이템을 표시하는 리스트 박스    | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarListBox) |
-| CalendarListItem      | ListBoxItem     | 달력 리스트 박스의 개별 아이템              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/CalendarListItem) |
-| DateRangeSelector     | Control         | 날짜 범위를 선택하는 컨트롤                 | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/DateRangeSelector) |
-| RangeCalendar         | Calendar        | 범위 선택이 가능한 달력 컨트롤              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RangeCalendar) |
-| UnderlineMenuBox      | ListBox         | 밑줄 스타일의 메뉴 리스트 박스              | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/UnderlineMenuBox) |
-| UnderlineMenuBoxItem  | ListBoxItem     | 밑줄 스타일의 메뉴 아이템                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/UnderlineMenuBoxItem) |
+#### 2. Theming and Styling
+- [x] Utilization of DynamicResource for theme application
+- [x] Flexible styling system for easy customization
+- [x] Consistent design language across all controls
 
+#### 3. WPF Best Practices
+- [x] Demonstration of MVVM pattern integration
+- [x] Efficient use of WPF binding and commanding
+- [x] Showcase of advanced WPF techniques
 
-### Text Input & Related
-| Control               | Base Type       | Description                                 | Namespace              | Template Link |
-|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| SearchTextBox         | TextBox         | 검색 아이콘 포함된 텍스트 박스 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SearchTextBox) |
-| SmartTextBox          | TextBox         | 입력에 따라 제안하는 스마트 텍스트 박스     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/SmartTextBox) |
+#### 4. Learning-Focused Design
+- [x] Clear, well-documented code for educational purposes
+- [x] Examples of complex WPF concepts in practical applications
+- [x] Modular architecture for easy understanding and extension
 
-### Toggles & Selectors
-| Control               | Base Type       | Description                                 | Namespace              | Template Link |
-|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| ComboBoxToggleButton  | ToggleButton    | 콤보 박스와 토글 버튼이 결합된 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ComboBoxToggleButton) |
-| IconSwitch            | ToggleSwitch    | 아이콘 포함된 토글 스위치 컨트롤            | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/IconSwitch) |
-| RadioExpander         | Expander        | 라디오 버튼 기능이 포함된 확장 컨트롤      | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RadioExpander) |
-| RageSlider            | Slider          | 주 rage 값을 표시하는 슬라이더             | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/RageSlider) |
-| ToggleRadioSwitch     | ToggleSwitch    | 라디오 버튼 스위치 형태의 토글 컨트롤       | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleRadioSwitch) |
-| ToggleSwitch          | ToggleSwitch    | 기본 토글 스위치 컨트롤                     | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/ToggleSwitch) |
+#### 5. Performance Optimization
+- [x] Efficient rendering and resource management
+- [x] Optimized control templates for smooth UI interactions
 
-### Separators
-| Control               | Base Type       | Description                                 | Namespace              | Template Link |
-|:----------------------|:----------------|:--------------------------------------------|:-----------------------|:--------------|
-| HorizSeparator        | Separator       | 수평 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/HorizSeparator) |
-| VerticalSeparator     | Separator       | 수직 방향의 구분선 컨트롤                   | Jamesnet.Wpf.Component | [View Template](https://github.com/jamesnet214/xamldesignwpf/wiki/VerticalSeparator) |
+## Technology Stack
+- .NET 8.0
+- WPF (Windows Presentation Foundation)
+- C# 10.0
+- XAML
 
+## Getting Started
+### Prerequisites
+- Visual Studio 2022 or later
+- .NET 8.0 SDK
+  
+<img src="https://github.com/user-attachments/assets/af70f422-7057-4e77-a54d-042ee8358d2a" width="32%"/>
+<img src="https://github.com/user-attachments/assets/e4feaa10-a107-4b58-8d13-1d8be620ec62" width="32%"/>
+<img src="https://github.com/user-attachments/assets/5ff487f6-55e4-43e1-9abf-f8d419ee6943" width="32%"/>
 
+### Installation and Usage
+#### 1. Install via NuGet:
 
----
+```
+Install-Package XamlDesign -Version [latest version number]
+```
 
-## 💡 시작하기
+#### 2. Add to your project
+- [x] Add references in your XAML files
+- [x] Import necessary namespaces
 
-- **설치**:
-  ```sh
-  Install-Package XamlDesign.Wpf.UI.Units -Version [최신 버전 번호]
-  ```
+#### 3. Start using XamlDesign controls
+- [x] Integrate controls into your WPF application
+- [x] Customize using provided DependencyProperties
+- [x] Apply themes using DynamicResource
 
-- [📖 Documentation (위키로 연결)](https://github.com/jamesnet214/xamldesignwpf/wiki)
-- [🐞 이슈 제출하기](https://github.com/jamesnet214/xamldesignwpf/issues)
+## Control List Highlights
+- **Buttons**: BorderedButton, FilledButton, IconButton, TextButton, BadgeButton
+- **Calendar & Date**: CalendarComboBox, CalendarListBox, DateRangeSelector, RangeCalendar
+- **Input Controls**: SearchTextBox, SmartTextBox
+- **Toggles & Selectors**: ComboBoxToggleButton, IconSwitch, RadioExpander, RageSlider
+- **And many more...**
 
----
+## Learning Opportunities
+XamlDesign offers rich learning experiences for WPF developers:
+1. **Custom Control Development**: Learn to create complex, reusable WPF controls
+2. **DependencyProperty Usage**: Understand the power and flexibility of DependencyProperties
+3. **Theming with DynamicResource**: Master dynamic theming in WPF applications
+4. **XAML and C# Integration**: See best practices for combining XAML and C# in WPF
+5. **Performance Optimization**: Learn techniques for creating efficient WPF UIs
 
-## 🤝 기여하기
+## Contributing
+Contributions to XamlDesign are welcome! Feel free to submit issues, create pull requests, or suggest improvements.
 
-모든 종류의 기여를 환영합니다! 이슈 제출, 풀 리퀘스트, 개선 제안 등 자유롭게 참여해주세요.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [기여 가이드라인 보기](LINK_TO_CONTRIBUTING_GUIDE)
+## Contact
+- Website: https://jamesnet.dev
+- Email: james@jamesnet.dev, vickyqu115@hotmail.com
 
----
-
-## ⚖ 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. [라이선스 내용 확인하기](LICENSE).
+Explore the world of advanced WPF control development with XamlDesign!
