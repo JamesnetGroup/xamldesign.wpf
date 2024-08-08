@@ -1,4 +1,4 @@
-# XamlDesign [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/Language-한국어-red.svg)](README.ko.md)
+# XamlDesign [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md) [![한국어](https://img.shields.io/badge/Language-한국어-green.svg)](README.ko.md)
 
 WPF 애플리케이션을 위한 학습 및 커스터마이징에 중점을 둔 고성능 오픈소스 UI 라이브러리
 
